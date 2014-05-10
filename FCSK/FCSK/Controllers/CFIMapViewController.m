@@ -50,9 +50,11 @@
     [self addMarkerAtLatitude:12.96 Longitude:77.56 title:@"Bangalore" snippet:@"Karnataka"];
     [self addCircleAtLatitude:12.96 Longitude:77.56 circleColor:[UIColor redColor] fillColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:0.4] circleWidth:2 radius:50000 animate:YES];
     
+    self.title = @"Map";
+    
     //self.animateTimer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(animateCircles) userInfo:nil repeats:YES];
     
-    /*CFILocation *location = [[CFILocation alloc]init];
+    CFILocation *location = [[CFILocation alloc]init];
     location.latitude = @12.96;
     location.longitude = @77.56;
     
@@ -69,7 +71,13 @@
             rectangle.strokeWidth = 2.;
             rectangle.map = self.mapView;
         });
-    }];*/
+    }];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

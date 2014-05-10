@@ -52,6 +52,9 @@
 		4F255542191E9A2C00B7B775 /* CFIGetCheckPostDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F255541191E9A2C00B7B775 /* CFIGetCheckPostDetails.m */; };
 		4F255545191E9BB200B7B775 /* CFIRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F255544191E9BB200B7B775 /* CFIRegion.m */; };
 		4F255548191E9DB000B7B775 /* CFIShareRegionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F255547191E9DB000B7B775 /* CFIShareRegionInfo.m */; };
+		4F255550191EC3D900B7B775 /* RMPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F25554B191EC3D900B7B775 /* RMPieChart.m */; };
+		4F255551191EC3D900B7B775 /* RMPieLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F25554D191EC3D900B7B775 /* RMPieLayer.m */; };
+		4F255552191EC3D900B7B775 /* RMPieValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F25554F191EC3D900B7B775 /* RMPieValueObject.m */; };
 		4F441905191DDE16005EE6F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441904191DDE16005EE6F5 /* Foundation.framework */; };
 		4F441907191DDE16005EE6F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441906191DDE16005EE6F5 /* CoreGraphics.framework */; };
 		4F441909191DDE16005EE6F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441908191DDE16005EE6F5 /* UIKit.framework */; };
@@ -153,6 +156,12 @@
 		4F255544191E9BB200B7B775 /* CFIRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIRegion.m; sourceTree = "<group>"; };
 		4F255546191E9DB000B7B775 /* CFIShareRegionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIShareRegionInfo.h; sourceTree = "<group>"; };
 		4F255547191E9DB000B7B775 /* CFIShareRegionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIShareRegionInfo.m; sourceTree = "<group>"; };
+		4F25554A191EC3D900B7B775 /* RMPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPieChart.h; sourceTree = "<group>"; };
+		4F25554B191EC3D900B7B775 /* RMPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPieChart.m; sourceTree = "<group>"; };
+		4F25554C191EC3D900B7B775 /* RMPieLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPieLayer.h; sourceTree = "<group>"; };
+		4F25554D191EC3D900B7B775 /* RMPieLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPieLayer.m; sourceTree = "<group>"; };
+		4F25554E191EC3D900B7B775 /* RMPieValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPieValueObject.h; sourceTree = "<group>"; };
+		4F25554F191EC3D900B7B775 /* RMPieValueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPieValueObject.m; sourceTree = "<group>"; };
 		4F441901191DDE16005EE6F5 /* FCSK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCSK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F441904191DDE16005EE6F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F441906191DDE16005EE6F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -290,6 +299,19 @@
 			path = MapPins;
 			sourceTree = "<group>";
 		};
+		4F255549191EC3D900B7B775 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4F25554A191EC3D900B7B775 /* RMPieChart.h */,
+				4F25554B191EC3D900B7B775 /* RMPieChart.m */,
+				4F25554C191EC3D900B7B775 /* RMPieLayer.h */,
+				4F25554D191EC3D900B7B775 /* RMPieLayer.m */,
+				4F25554E191EC3D900B7B775 /* RMPieValueObject.h */,
+				4F25554F191EC3D900B7B775 /* RMPieValueObject.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		4F4418F8191DDE16005EE6F5 = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +359,7 @@
 		4F44190A191DDE16005EE6F5 /* FCSK */ = {
 			isa = PBXGroup;
 			children = (
+				4F255549191EC3D900B7B775 /* Components */,
 				4F25550B191E4EA300B7B775 /* Images */,
 				C3B3F418191E4469006D5BB4 /* UIAlertView+Blocks.h */,
 				C3B3F419191E4469006D5BB4 /* UIAlertView+Blocks.m */,
@@ -576,6 +599,7 @@
 				4F255548191E9DB000B7B775 /* CFIShareRegionInfo.m in Sources */,
 				4F255503191E36AB00B7B775 /* CFIMapViewController.m in Sources */,
 				4F117621191DF24B00C0000D /* CFIIncidentLoacation.m in Sources */,
+				4F255552191EC3D900B7B775 /* RMPieValueObject.m in Sources */,
 				4F117619191DF0BB00C0000D /* CFIApi.m in Sources */,
 				4F11761E191DF1A100C0000D /* CFILocation.m in Sources */,
 				4F44193C191DEB7E005EE6F5 /* CFIBaseitem.m in Sources */,
@@ -585,7 +609,9 @@
 				4F255539191E966E00B7B775 /* CFICurrentBooth.m in Sources */,
 				4F11761B191DF0BB00C0000D /* CFILogin.m in Sources */,
 				4F25552A191E709B00B7B775 /* CFIStatsViewController.m in Sources */,
+				4F255550191EC3D900B7B775 /* RMPieChart.m in Sources */,
 				C3B3F41A191E4469006D5BB4 /* UIAlertView+Blocks.m in Sources */,
+				4F255551191EC3D900B7B775 /* RMPieLayer.m in Sources */,
 				C3B3F41E191E5D76006D5BB4 /* CFIRegisterUserViewController.m in Sources */,
 				4F255545191E9BB200B7B775 /* CFIRegion.m in Sources */,
 				4F255542191E9A2C00B7B775 /* CFIGetCheckPostDetails.m in Sources */,
@@ -708,6 +734,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: vivek rajanna (EKS332JUA3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -718,6 +745,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "874C3CC5-6872-4860-BF96-72CADA398A70";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -728,6 +756,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: vivek rajanna (EKS332JUA3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: vivek rajanna (EKS332JUA3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -738,6 +768,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "874C3CC5-6872-4860-BF96-72CADA398A70";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};

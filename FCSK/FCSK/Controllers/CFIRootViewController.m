@@ -11,6 +11,7 @@
 #import "CFISignInViewController.h"
 #import "CFIStatsViewController.h"
 #import "SCViewController.h"
+#import "CFIRegisterUserViewController.h"
 
 @interface CFIRootViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *statBtn;
@@ -82,11 +83,17 @@
 - (IBAction)scanButtonPressed:(id)sender
 {
     SCViewController *scanViewController = [[SCViewController alloc] initWithNibName:@"CFIScanViewController" bundle:nil];
+    scanViewController.hasUserRegistered = YES;
     [self.navigationController pushViewController:scanViewController animated:YES];
     
     
 }
-- (IBAction)registerUserButtonPressed:(id)sender {
+- (IBAction)registerUserButtonPressed:(id)sender
+{
+    CFIRegisterUserViewController *registerController = [[CFIRegisterUserViewController alloc] initWithNibName:@"CFIRegisterUserViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:registerController animated:YES];
+    
 }
 - (IBAction)mapButtonPressed:(id)sender {
     

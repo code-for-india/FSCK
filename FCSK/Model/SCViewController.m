@@ -154,7 +154,7 @@
             
            // NSLog(@"%@",xmlParser.userDataDictionary);
             
-            UIAlertView *alertView= [[UIAlertView alloc] initWithTitle:@"Confirm Details" message:[NSString stringWithFormat:@"Name : %@ \n Token # : %@",xmlParser.userDataDictionary[@"name"],xmlParser.userDataDictionary[@"uid"]]
+            UIAlertView *alertView= [[UIAlertView alloc] initWithTitle:@"Confirm Details" message:[NSString stringWithFormat:@"Name : %@ \n Token # : %@",self.userDataDictionary[@"name"],self.userDataDictionary[@"uid"]]
             cancelTitle:@"Try Again" cancelBlock:^(NSArray *collectedStrings)
             {
                 [self startCapturing];
@@ -268,7 +268,19 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (self.hasUserRegistered)
+    {
+        // call Update API
+    }
+    else
+    {
+        // call SignUP API
+    }
+    
+    
     // send API To server indicating the next booth
+    
+    
     
     
     // on completion.

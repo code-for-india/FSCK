@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F117619191DF0BB00C0000D /* CFIApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117614191DF0BB00C0000D /* CFIApi.m */; };
+		4F11761A191DF0BB00C0000D /* MPMuseumDataApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117616191DF0BB00C0000D /* MPMuseumDataApi.m */; };
+		4F11761B191DF0BB00C0000D /* MPMuseumItemDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117618191DF0BB00C0000D /* MPMuseumItemDetails.m */; };
+		4F11761E191DF1A100C0000D /* CFILocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F11761D191DF1A100C0000D /* CFILocation.m */; };
+		4F117621191DF24B00C0000D /* CFIIncidentLoacation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117620191DF24B00C0000D /* CFIIncidentLoacation.m */; };
 		4F441905191DDE16005EE6F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441904191DDE16005EE6F5 /* Foundation.framework */; };
 		4F441907191DDE16005EE6F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441906191DDE16005EE6F5 /* CoreGraphics.framework */; };
 		4F441909191DDE16005EE6F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441908191DDE16005EE6F5 /* UIKit.framework */; };
@@ -20,6 +25,8 @@
 		4F441928191DDE17005EE6F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F441926191DDE17005EE6F5 /* InfoPlist.strings */; };
 		4F44192A191DDE17005EE6F5 /* FCSKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F441929191DDE17005EE6F5 /* FCSKTests.m */; };
 		4F441936191DDE6D005EE6F5 /* CFIRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F441935191DDE6D005EE6F5 /* CFIRootViewController.m */; };
+		4F44193C191DEB7E005EE6F5 /* CFIBaseitem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F441939191DEB7E005EE6F5 /* CFIBaseitem.m */; };
+		4F44193D191DEB7E005EE6F5 /* CFIUserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F117613191DF0BB00C0000D /* CFIApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIApi.h; sourceTree = "<group>"; };
+		4F117614191DF0BB00C0000D /* CFIApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIApi.m; sourceTree = "<group>"; };
+		4F117615191DF0BB00C0000D /* MPMuseumDataApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMuseumDataApi.h; sourceTree = "<group>"; };
+		4F117616191DF0BB00C0000D /* MPMuseumDataApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMuseumDataApi.m; sourceTree = "<group>"; };
+		4F117617191DF0BB00C0000D /* MPMuseumItemDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMuseumItemDetails.h; sourceTree = "<group>"; };
+		4F117618191DF0BB00C0000D /* MPMuseumItemDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMuseumItemDetails.m; sourceTree = "<group>"; };
+		4F11761C191DF1A100C0000D /* CFILocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFILocation.h; sourceTree = "<group>"; };
+		4F11761D191DF1A100C0000D /* CFILocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFILocation.m; sourceTree = "<group>"; };
+		4F11761F191DF24B00C0000D /* CFIIncidentLoacation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIIncidentLoacation.h; sourceTree = "<group>"; };
+		4F117620191DF24B00C0000D /* CFIIncidentLoacation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIIncidentLoacation.m; sourceTree = "<group>"; };
 		4F441901191DDE16005EE6F5 /* FCSK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCSK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F441904191DDE16005EE6F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F441906191DDE16005EE6F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,6 +68,11 @@
 		4F441929191DDE17005EE6F5 /* FCSKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCSKTests.m; sourceTree = "<group>"; };
 		4F441934191DDE6D005EE6F5 /* CFIRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFIRootViewController.h; path = Controllers/CFIRootViewController.h; sourceTree = SOURCE_ROOT; };
 		4F441935191DDE6D005EE6F5 /* CFIRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFIRootViewController.m; path = Controllers/CFIRootViewController.m; sourceTree = SOURCE_ROOT; };
+		4F441938191DEB7E005EE6F5 /* CFIBaseitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIBaseitem.h; sourceTree = "<group>"; };
+		4F441939191DEB7E005EE6F5 /* CFIBaseitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIBaseitem.m; sourceTree = "<group>"; };
+		4F44193A191DEB7E005EE6F5 /* CFIUserDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIUserDetails.h; sourceTree = "<group>"; };
+		4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIUserDetails.m; sourceTree = "<group>"; };
+		4F44193E191DEC22005EE6F5 /* Enumerations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enumerations.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +99,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F117612191DF0BB00C0000D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4F117613191DF0BB00C0000D /* CFIApi.h */,
+				4F117614191DF0BB00C0000D /* CFIApi.m */,
+				4F117615191DF0BB00C0000D /* MPMuseumDataApi.h */,
+				4F117616191DF0BB00C0000D /* MPMuseumDataApi.m */,
+				4F117617191DF0BB00C0000D /* MPMuseumItemDetails.h */,
+				4F117618191DF0BB00C0000D /* MPMuseumItemDetails.m */,
+			);
+			path = API;
+			sourceTree = SOURCE_ROOT;
+		};
 		4F4418F8191DDE16005EE6F5 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +145,8 @@
 		4F44190A191DDE16005EE6F5 /* FCSK */ = {
 			isa = PBXGroup;
 			children = (
+				4F117612191DF0BB00C0000D /* API */,
+				4F441937191DEB7E005EE6F5 /* Model */,
 				4F441933191DDE2D005EE6F5 /* Controllers */,
 				4F441913191DDE17005EE6F5 /* CFIAppDelegate.h */,
 				4F441914191DDE17005EE6F5 /* CFIAppDelegate.m */,
@@ -156,6 +193,22 @@
 			);
 			name = Controllers;
 			sourceTree = "<group>";
+		};
+		4F441937191DEB7E005EE6F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F44193E191DEC22005EE6F5 /* Enumerations.h */,
+				4F441938191DEB7E005EE6F5 /* CFIBaseitem.h */,
+				4F441939191DEB7E005EE6F5 /* CFIBaseitem.m */,
+				4F44193A191DEB7E005EE6F5 /* CFIUserDetails.h */,
+				4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */,
+				4F11761C191DF1A100C0000D /* CFILocation.h */,
+				4F11761D191DF1A100C0000D /* CFILocation.m */,
+				4F11761F191DF24B00C0000D /* CFIIncidentLoacation.h */,
+				4F117620191DF24B00C0000D /* CFIIncidentLoacation.m */,
+			);
+			path = Model;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -253,8 +306,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F44193D191DEB7E005EE6F5 /* CFIUserDetails.m in Sources */,
 				4F441911191DDE17005EE6F5 /* main.m in Sources */,
+				4F11761A191DF0BB00C0000D /* MPMuseumDataApi.m in Sources */,
+				4F117621191DF24B00C0000D /* CFIIncidentLoacation.m in Sources */,
 				4F441936191DDE6D005EE6F5 /* CFIRootViewController.m in Sources */,
+				4F117619191DF0BB00C0000D /* CFIApi.m in Sources */,
+				4F11761E191DF1A100C0000D /* CFILocation.m in Sources */,
+				4F44193C191DEB7E005EE6F5 /* CFIBaseitem.m in Sources */,
+				4F11761B191DF0BB00C0000D /* MPMuseumItemDetails.m in Sources */,
 				4F441915191DDE17005EE6F5 /* CFIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +512,7 @@
 				4F44192F191DDE17005EE6F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F441930191DDE17005EE6F5 /* Build configuration list for PBXNativeTarget "FCSKTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +521,7 @@
 				4F441932191DDE17005EE6F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,6 +17,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SCViewController : UIViewController
+@interface SCViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 @property(strong,nonatomic)NSMutableDictionary *userDataDictionary;
 @end

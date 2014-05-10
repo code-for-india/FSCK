@@ -52,14 +52,13 @@
 		4F44192A191DDE17005EE6F5 /* FCSKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F441929191DDE17005EE6F5 /* FCSKTests.m */; };
 		4F44193C191DEB7E005EE6F5 /* CFIBaseitem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F441939191DEB7E005EE6F5 /* CFIBaseitem.m */; };
 		4F44193D191DEB7E005EE6F5 /* CFIUserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */; };
+		C3B3F41A191E4469006D5BB4 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3F419191E4469006D5BB4 /* UIAlertView+Blocks.m */; };
 		C3E7EA45191E2853002EFA46 /* CFISignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */; };
 		C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */; };
 		C3E7EA4B191E2B8D002EFA46 /* input_field_email_address.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */; };
 		C3E7EA4C191E2B8D002EFA46 /* input_field_email_address@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA4A191E2B8D002EFA46 /* input_field_email_address@2x.png */; };
-		C3E7EA50191E30D0002EFA46 /* CFIScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA4E191E30D0002EFA46 /* CFIScanViewController.m */; };
 		C3E7EA51191E30D0002EFA46 /* CFIScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */; };
 		C3E7EA56191E31CD002EFA46 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA53191E31CD002EFA46 /* SCViewController.m */; };
-		C3E7EA57191E31CD002EFA46 /* SCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA54191E31CD002EFA46 /* SCViewController.xib */; };
 		C3E7EA58191E31CD002EFA46 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA55191E31CD002EFA46 /* beep.mp3 */; };
 		C3E7EA5B191E3240002EFA46 /* KSXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA5A191E3240002EFA46 /* KSXMLParser.m */; };
 		C3E7EA5E191E3272002EFA46 /* SCShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA5D191E3272002EFA46 /* SCShapeView.m */; };
@@ -135,17 +134,16 @@
 		4F44193A191DEB7E005EE6F5 /* CFIUserDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIUserDetails.h; sourceTree = "<group>"; };
 		4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIUserDetails.m; sourceTree = "<group>"; };
 		4F44193E191DEC22005EE6F5 /* Enumerations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enumerations.h; sourceTree = "<group>"; };
+		C3B3F418191E4469006D5BB4 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		C3B3F419191E4469006D5BB4 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		C3E7EA42191E2853002EFA46 /* CFISignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFISignInViewController.h; path = ../CFISignInViewController.h; sourceTree = "<group>"; };
 		C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFISignInViewController.m; path = ../CFISignInViewController.m; sourceTree = "<group>"; };
 		C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CFISignInViewController.xib; path = ../CFISignInViewController.xib; sourceTree = "<group>"; };
 		C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = input_field_email_address.png; sourceTree = "<group>"; };
 		C3E7EA4A191E2B8D002EFA46 /* input_field_email_address@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input_field_email_address@2x.png"; sourceTree = "<group>"; };
-		C3E7EA4D191E30D0002EFA46 /* CFIScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIScanViewController.h; sourceTree = "<group>"; };
-		C3E7EA4E191E30D0002EFA46 /* CFIScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIScanViewController.m; sourceTree = "<group>"; };
 		C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFIScanViewController.xib; sourceTree = "<group>"; };
 		C3E7EA52191E31CD002EFA46 /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCViewController.h; path = ../Model/SCViewController.h; sourceTree = "<group>"; };
 		C3E7EA53191E31CD002EFA46 /* SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCViewController.m; path = ../Model/SCViewController.m; sourceTree = "<group>"; };
-		C3E7EA54191E31CD002EFA46 /* SCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SCViewController.xib; path = ../Model/SCViewController.xib; sourceTree = "<group>"; };
 		C3E7EA55191E31CD002EFA46 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beep.mp3; path = ../Model/beep.mp3; sourceTree = "<group>"; };
 		C3E7EA59191E3240002EFA46 /* KSXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSXMLParser.h; sourceTree = "<group>"; };
 		C3E7EA5A191E3240002EFA46 /* KSXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSXMLParser.m; sourceTree = "<group>"; };
@@ -275,13 +273,15 @@
 			isa = PBXGroup;
 			children = (
 				4F25550B191E4EA300B7B775 /* Images */,
+				C3B3F418191E4469006D5BB4 /* UIAlertView+Blocks.h */,
+				C3B3F419191E4469006D5BB4 /* UIAlertView+Blocks.m */,
 				C3E7EA59191E3240002EFA46 /* KSXMLParser.h */,
 				C3E7EA5A191E3240002EFA46 /* KSXMLParser.m */,
 				C3E7EA5C191E3272002EFA46 /* SCShapeView.h */,
 				C3E7EA5D191E3272002EFA46 /* SCShapeView.m */,
 				C3E7EA52191E31CD002EFA46 /* SCViewController.h */,
 				C3E7EA53191E31CD002EFA46 /* SCViewController.m */,
-				C3E7EA54191E31CD002EFA46 /* SCViewController.xib */,
+				C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */,
 				C3E7EA55191E31CD002EFA46 /* beep.mp3 */,
 				4F117612191DF0BB00C0000D /* API */,
 				4F441937191DEB7E005EE6F5 /* Model */,
@@ -482,10 +482,10 @@
 				4F117619191DF0BB00C0000D /* CFIApi.m in Sources */,
 				4F11761E191DF1A100C0000D /* CFILocation.m in Sources */,
 				4F44193C191DEB7E005EE6F5 /* CFIBaseitem.m in Sources */,
-				C3E7EA50191E30D0002EFA46 /* CFIScanViewController.m in Sources */,
 				C3E7EA5B191E3240002EFA46 /* KSXMLParser.m in Sources */,
 				4F117627191E270E00C0000D /* CFIRootViewController.m in Sources */,
 				4F11761B191DF0BB00C0000D /* MPMuseumItemDetails.m in Sources */,
+				C3B3F41A191E4469006D5BB4 /* UIAlertView+Blocks.m in Sources */,
 				C3E7EA5E191E3272002EFA46 /* SCShapeView.m in Sources */,
 				4F441915191DDE17005EE6F5 /* CFIAppDelegate.m in Sources */,
 			);

@@ -19,6 +19,9 @@
 @import AVFoundation;
 #import "SCShapeView.h"
 #import "KSXMLParser.h"
+#import "UIAlertView+Blocks.h"
+
+
 @interface SCViewController () <AVCaptureMetadataOutputObjectsDelegate> {
     AVCaptureVideoPreviewLayer *_previewLayer;
     SCShapeView *_boundingBox;
@@ -27,6 +30,8 @@
     BOOL isCaptured;
 }
 @property (strong,nonatomic)AVAudioPlayer* audioPlayer;
+@property (strong, nonatomic) AVCaptureSession *captureSession;
+
 @end
 
 @implementation SCViewController
@@ -42,9 +47,15 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.navigationController.navigationBar.hidden = NO;
-    self.navigationController.navigationBar.topItem.title = @"SCAN QR CODE";
+    self.title = @"SCAN QR CODE";
     // Create a new AVCaptureSession
+    
+}
+
+-(void) startCapturing
+{
     AVCaptureSession *session = [[AVCaptureSession alloc] init];
+    self.captureSession = session;
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     NSError *error = nil;
     
@@ -72,10 +83,12 @@
     // Display on screen
     _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:session];
     _previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    _previewLayer.bounds = self.view.bounds;
+    _previewLayer.bounds =  CGRectMake(0, 0, CGRectGetHeight(self.view.bounds), CGRectGetWidth(self.view.bounds));
     _previewLayer.position = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
     [self.view.layer addSublayer:_previewLayer];
     
+    _previewLayer.transform = CATransform3DIdentity;
+    _previewLayer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI_2, 0, 0, 1);
     
     // Add the view to draw the bounding box for the UIView
     _boundingBox = [[SCShapeView alloc] initWithFrame:self.view.bounds];
@@ -83,17 +96,19 @@
     _boundingBox.hidden = YES;
     [self.view addSubview:_boundingBox];
     
-//    // Add a label to display the resultant message
-//    _decodedMessage = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) - 75, CGRectGetWidth(self.view.bounds), 75)];
-//    _decodedMessage.numberOfLines = 0;
-//    _decodedMessage.backgroundColor = [UIColor colorWithWhite:0.8 alpha:0.9];
-//    _decodedMessage.textColor = [UIColor darkGrayColor];
-//    _decodedMessage.textAlignment = NSTextAlignmentCenter;
-//    [self.view addSubview:_decodedMessage];
-//    
+    //    // Add a label to display the resultant message
+    //    _decodedMessage = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) - 75, CGRectGetWidth(self.view.bounds), 75)];
+    //    _decodedMessage.numberOfLines = 0;
+    //    _decodedMessage.backgroundColor = [UIColor colorWithWhite:0.8 alpha:0.9];
+    //    _decodedMessage.textColor = [UIColor darkGrayColor];
+    //    _decodedMessage.textAlignment = NSTextAlignmentCenter;
+    //    [self.view addSubview:_decodedMessage];
+    //
     // Start the AVSession running
     [session startRunning];
+
 }
+
 
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
@@ -134,12 +149,33 @@
             isCaptured = YES;
             // Start the timer which will hide the overlay
             [self startOverlayHideTimer];
-//            KSCreateAccountViewController *createAccountViewController = [[KSCreateAccountViewController alloc] initWithNibName:@"KSCreateAccountViewController" bundle:nil];
-//            NSLog(@"%@", [xmlParser.userDataDictionary objectForKey:@"name"]);
-//            
-//            createAccountViewController.stringName = [NSString stringWithFormat:@"%@", [xmlParser.userDataDictionary objectForKey:@"name"]];
-//            createAccountViewController.stringUid = [NSString stringWithFormat:@"%@", [xmlParser.userDataDictionary objectForKey:@"uid"]];
-
+            
+            [self.captureSession stopRunning];
+            
+           // NSLog(@"%@",xmlParser.userDataDictionary);
+            
+            UIAlertView *alertView= [[UIAlertView alloc] initWithTitle:@"Confirm Details" message:[NSString stringWithFormat:@"Name : %@ \n Token # : %@",xmlParser.userDataDictionary[@"name"],xmlParser.userDataDictionary[@"uid"]]
+            cancelTitle:@"Try Again" cancelBlock:^(NSArray *collectedStrings)
+            {
+                [self startCapturing];
+            }
+            okTitle:@"Confirm" okBlock:^(NSArray *collectedStrings)
+            {
+                [_previewLayer removeFromSuperlayer];
+                [_boundingBox removeFromSuperview];
+                
+                
+                UITableView *tableView = [[UITableView alloc] init];
+                tableView.frame =  self.view.frame;
+                tableView.delegate = self;
+                tableView.dataSource = self;
+                [self.view addSubview:tableView];
+                
+            }];
+            [alertView show];
+            
+            
+            
             
 //            [self.navigationController pushViewController:createAccountViewController animated:NO];
             
@@ -188,6 +224,36 @@
     
     return [translatedPoints copy];
 }
+
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [[[NSUserDefaults standardUserDefaults] objectForKey:@"neighbourBooths"] count];
+}
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:@"boothCell"];
+    if (!cell)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"boothCell"];
+        
+    }
+    
+    NSDictionary *dict = [[[NSUserDefaults standardUserDefaults] objectForKey:@"neighbourBooths"] objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = dict[@"name"];
+    cell.detailTextLabel.text = dict[@"id"];
+    
+    return cell;
+}
+
+
+
 
 
 @end

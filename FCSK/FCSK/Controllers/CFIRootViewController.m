@@ -9,6 +9,8 @@
 #import "CFIRootViewController.h"
 #import "CFIMapViewController.h"
 
+#import "SCViewController.h"
+
 @interface CFIRootViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *statBtn;
 @property (weak, nonatomic) IBOutlet UIButton *scanBtn;
@@ -68,7 +70,12 @@
 - (IBAction)statsButtonPressed:(id)sender {
 }
 
-- (IBAction)scanButtonPressed:(id)sender {
+- (IBAction)scanButtonPressed:(id)sender
+{
+    SCViewController *scanViewController = [[SCViewController alloc] initWithNibName:@"CFIScanViewController" bundle:nil];
+    [self.navigationController pushViewController:scanViewController animated:YES];
+    
+    
 }
 - (IBAction)registerUserButtonPressed:(id)sender {
 }

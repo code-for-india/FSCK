@@ -9,6 +9,7 @@
 #import "CFIRootViewController.h"
 #import "CFIMapViewController.h"
 #import "CFISignInViewController.h"
+#import "CFIStatsViewController.h"
 #import "SCViewController.h"
 
 @interface CFIRootViewController ()
@@ -74,6 +75,8 @@
 
 #pragma mark - Button Actions
 - (IBAction)statsButtonPressed:(id)sender {
+    CFIStatsViewController *statsController = [[CFIStatsViewController alloc]initWithNibName:@"CFIStatsViewController" bundle:nil];
+    [self.navigationController pushViewController:statsController animated:YES];
 }
 
 - (IBAction)scanButtonPressed:(id)sender

@@ -39,6 +39,13 @@
 		4F25551D191E4EA300B7B775 /* ico_statics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255514191E4EA300B7B775 /* ico_statics@2x.png */; };
 		4F255520191E501A00B7B775 /* storm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F25551F191E501A00B7B775 /* storm.jpg */; };
 		4F255526191E58F600B7B775 /* CFIGetRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F255525191E58F600B7B775 /* CFIGetRoute.m */; };
+		4F25552A191E709B00B7B775 /* CFIStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F255528191E709B00B7B775 /* CFIStatsViewController.m */; };
+		4F25552B191E709B00B7B775 /* CFIStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F255529191E709B00B7B775 /* CFIStatsViewController.xib */; };
+		4F25552D191E718D00B7B775 /* storm_dark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F25552C191E718D00B7B775 /* storm_dark.jpg */; };
+		4F255533191E8BED00B7B775 /* ico_curr_loc.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F25552F191E8BED00B7B775 /* ico_curr_loc.png */; };
+		4F255534191E8BED00B7B775 /* ico_curr_loc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255530191E8BED00B7B775 /* ico_curr_loc@2x.png */; };
+		4F255535191E8BED00B7B775 /* ico_diff_loc.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255531191E8BED00B7B775 /* ico_diff_loc.png */; };
+		4F255536191E8BED00B7B775 /* ico_diff_loc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255532191E8BED00B7B775 /* ico_diff_loc@2x.png */; };
 		4F441905191DDE16005EE6F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441904191DDE16005EE6F5 /* Foundation.framework */; };
 		4F441907191DDE16005EE6F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441906191DDE16005EE6F5 /* CoreGraphics.framework */; };
 		4F441909191DDE16005EE6F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441908191DDE16005EE6F5 /* UIKit.framework */; };
@@ -118,6 +125,14 @@
 		4F25551F191E501A00B7B775 /* storm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = storm.jpg; sourceTree = "<group>"; };
 		4F255524191E58F600B7B775 /* CFIGetRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIGetRoute.h; sourceTree = "<group>"; };
 		4F255525191E58F600B7B775 /* CFIGetRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIGetRoute.m; sourceTree = "<group>"; };
+		4F255527191E709B00B7B775 /* CFIStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIStatsViewController.h; sourceTree = "<group>"; };
+		4F255528191E709B00B7B775 /* CFIStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIStatsViewController.m; sourceTree = "<group>"; };
+		4F255529191E709B00B7B775 /* CFIStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFIStatsViewController.xib; sourceTree = "<group>"; };
+		4F25552C191E718D00B7B775 /* storm_dark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = storm_dark.jpg; sourceTree = "<group>"; };
+		4F25552F191E8BED00B7B775 /* ico_curr_loc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_curr_loc.png; sourceTree = "<group>"; };
+		4F255530191E8BED00B7B775 /* ico_curr_loc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_curr_loc@2x.png"; sourceTree = "<group>"; };
+		4F255531191E8BED00B7B775 /* ico_diff_loc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_diff_loc.png; sourceTree = "<group>"; };
+		4F255532191E8BED00B7B775 /* ico_diff_loc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_diff_loc@2x.png"; sourceTree = "<group>"; };
 		4F441901191DDE16005EE6F5 /* FCSK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCSK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F441904191DDE16005EE6F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F441906191DDE16005EE6F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -214,7 +229,9 @@
 		4F25550B191E4EA300B7B775 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4F25552C191E718D00B7B775 /* storm_dark.jpg */,
 				4F25551F191E501A00B7B775 /* storm.jpg */,
+				4F25552E191E8BED00B7B775 /* MapPins */,
 				4F25550C191E4EA300B7B775 /* ActionIcons */,
 			);
 			path = Images;
@@ -233,6 +250,17 @@
 				4F255514191E4EA300B7B775 /* ico_statics@2x.png */,
 			);
 			path = ActionIcons;
+			sourceTree = "<group>";
+		};
+		4F25552E191E8BED00B7B775 /* MapPins */ = {
+			isa = PBXGroup;
+			children = (
+				4F25552F191E8BED00B7B775 /* ico_curr_loc.png */,
+				4F255530191E8BED00B7B775 /* ico_curr_loc@2x.png */,
+				4F255531191E8BED00B7B775 /* ico_diff_loc.png */,
+				4F255532191E8BED00B7B775 /* ico_diff_loc@2x.png */,
+			);
+			path = MapPins;
 			sourceTree = "<group>";
 		};
 		4F4418F8191DDE16005EE6F5 = {
@@ -349,9 +377,9 @@
 				C3B3F41B191E5D76006D5BB4 /* CFIRegisterUserViewController.h */,
 				C3B3F41C191E5D76006D5BB4 /* CFIRegisterUserViewController.m */,
 				C3B3F41D191E5D76006D5BB4 /* CFIRegisterUserViewController.xib */,
-				C3E7EA4D191E30D0002EFA46 /* CFIScanViewController.h */,
-				C3E7EA4E191E30D0002EFA46 /* CFIScanViewController.m */,
-				C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */,
+				4F255527191E709B00B7B775 /* CFIStatsViewController.h */,
+				4F255528191E709B00B7B775 /* CFIStatsViewController.m */,
+				4F255529191E709B00B7B775 /* CFIStatsViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -449,21 +477,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B3F421191E5DAC006D5BB4 /* CFIScanViewController.xib in Resources */,
+				4F25552D191E718D00B7B775 /* storm_dark.jpg in Resources */,
+				4F255533191E8BED00B7B775 /* ico_curr_loc.png in Resources */,
 				C3E7EA4B191E2B8D002EFA46 /* input_field_email_address.png in Resources */,
 				C3B3F41F191E5D76006D5BB4 /* CFIRegisterUserViewController.xib in Resources */,
 				4F255516191E4EA300B7B775 /* ico_map.png in Resources */,
 				4F117628191E270E00C0000D /* CFIRootViewController.xib in Resources */,
 				4F25551C191E4EA300B7B775 /* ico_statics.png in Resources */,
 				C3E7EA58191E31CD002EFA46 /* beep.mp3 in Resources */,
+				4F25552B191E709B00B7B775 /* CFIStatsViewController.xib in Resources */,
 				4F25551A191E4EA300B7B775 /* ico_register.png in Resources */,
 				4F255520191E501A00B7B775 /* storm.jpg in Resources */,
 				C3E7EA4C191E2B8D002EFA46 /* input_field_email_address@2x.png in Resources */,
 				4F255519191E4EA300B7B775 /* ico_qrcode@2x.png in Resources */,
-				C3E7EA51191E30D0002EFA46 /* CFIScanViewController.xib in Resources */,
 				4F255517191E4EA300B7B775 /* ico_map@2x.png in Resources */,
 				C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */,
+				4F255534191E8BED00B7B775 /* ico_curr_loc@2x.png in Resources */,
 				4F44190F191DDE17005EE6F5 /* InfoPlist.strings in Resources */,
+				4F255536191E8BED00B7B775 /* ico_diff_loc@2x.png in Resources */,
 				4F255518191E4EA300B7B775 /* ico_qrcode.png in Resources */,
+				4F255535191E8BED00B7B775 /* ico_diff_loc.png in Resources */,
 				4F441917191DDE17005EE6F5 /* Images.xcassets in Resources */,
 				4F255505191E372000B7B775 /* GoogleMaps.bundle in Resources */,
 				4F25551D191E4EA300B7B775 /* ico_statics@2x.png in Resources */,
@@ -500,6 +533,7 @@
 				C3E7EA5B191E3240002EFA46 /* KSXMLParser.m in Sources */,
 				4F117627191E270E00C0000D /* CFIRootViewController.m in Sources */,
 				4F11761B191DF0BB00C0000D /* CFILoginDetails.m in Sources */,
+				4F25552A191E709B00B7B775 /* CFIStatsViewController.m in Sources */,
 				C3B3F41A191E4469006D5BB4 /* UIAlertView+Blocks.m in Sources */,
 				C3B3F41E191E5D76006D5BB4 /* CFIRegisterUserViewController.m in Sources */,
 				C3E7EA5E191E3272002EFA46 /* SCShapeView.m in Sources */,

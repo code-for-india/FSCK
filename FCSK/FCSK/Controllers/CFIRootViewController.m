@@ -8,7 +8,7 @@
 
 #import "CFIRootViewController.h"
 #import "CFIMapViewController.h"
-
+#import "CFISignInViewController.h"
 #import "SCViewController.h"
 
 @interface CFIRootViewController ()
@@ -34,8 +34,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
     [self addBackgroundImage];
+    
+    // show login view controller
+    CFISignInViewController *sign = [[CFISignInViewController alloc]initWithNibName:@"CFISignInViewController" bundle:nil];
+    [self.navigationController presentViewController:sign animated:NO completion:^{
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning

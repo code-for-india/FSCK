@@ -49,6 +49,13 @@
 -(void) loginWithUsername:(NSString *)username withPassword:(NSString *)password
 {
     // Send API from here
+    
+    [self.usernameField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning

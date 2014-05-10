@@ -21,6 +21,7 @@
     [GMSServices provideAPIKey:@"AIzaSyAvkIWqXgxhzosj90FmROFDcn8YwWVkMO4"];
     
     self.rootController = [[UINavigationController alloc]initWithRootViewController:[[CFIRootViewController alloc]initWithNibName:@"CFIRootViewController" bundle:nil]];
+    self.rootController.navigationBar.translucent = YES;
     self.window.rootViewController = self.rootController;
     [self.window makeKeyAndVisible];
     

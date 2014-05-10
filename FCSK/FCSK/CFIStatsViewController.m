@@ -10,9 +10,10 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import "CFIShareRegionInfo.h"
 #import "CFIStatsTableViewCell.h"
+#import "RMPieChart.h"
 
 
-@interface CFIStatsViewController ()
+@interface CFIStatsViewController ()<RMPieChartDelegate,RMPieChartDataSource>
 @property (weak, nonatomic) IBOutlet UIView *boothInfoView;
 @property (weak, nonatomic) IBOutlet UILabel *boothName;
 @property (weak, nonatomic) IBOutlet UILabel *boothAddress;
@@ -21,6 +22,18 @@
 @property (strong, nonatomic) GMSMapView *mapView;
 @property (weak, nonatomic) IBOutlet UITableView *mapTableView;
 @property (strong, nonatomic) NSArray *neighbourBoothsArray;
+@property (weak, nonatomic) IBOutlet UIView *charContainerView;
+@property (strong, nonatomic) RMPieChart *pieChart;
+@property (strong, nonatomic) NSMutableArray *pieChartData;
+@property (weak, nonatomic) IBOutlet UIView *srView;
+@property (weak, nonatomic) IBOutlet UILabel *SRLabel;
+@property (weak, nonatomic) IBOutlet UIView *wview;
+@property (weak, nonatomic) IBOutlet UILabel *wLabel;
+@property (weak, nonatomic) IBOutlet UIView *mview;
+@property (weak, nonatomic) IBOutlet UILabel *mLabel;
+@property (weak, nonatomic) IBOutlet UIView *cview;
+@property (weak, nonatomic) IBOutlet UILabel *cLabel;
+
 @end
 
 @implementation CFIStatsViewController
@@ -42,12 +55,21 @@
     [self updateBoothInfoView];
     [self addMapView];
    
-    
     NSMutableArray *array = [NSMutableArray arrayWithArray: [CFIShareRegionInfo sharedInstance].currentRegion.booths];
     [array removeObject:self.booth];
     
+    self.pieChartData = [NSMutableArray array];
+    [self loadPieChart];
+    
     self.neighbourBoothsArray = array;
     
+    self.title = @"Statistics";
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -100,7 +122,47 @@
     //[self.locationCircleArray addObject:circle];
 }
 
+#pragma mark - Load PieChart
+- (void)loadPieChart
+{
+    self.pieChart = [[RMPieChart alloc]initWithFrame:self.charContainerView.bounds];
+    self.pieChart.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    self.pieChart.backgroundColor = [UIColor clearColor];
+    self.pieChart.chartBackgroundColor = [UIColor clearColor];
+    self.pieChart.radiusPercent = 0.3;
+    self.pieChart.datasource = self;
+    self.pieChart.delegate = self;
+    [self.charContainerView addSubview:self.pieChart];
+    
+    [self.pieChart loadChart];
+    
+    self.srView.backgroundColor = [UIColor colorWithHue:90/360.0 saturation:1 brightness:1 alpha:1];
+    self.wview.backgroundColor = [UIColor colorWithHue:180/360.0 saturation:1 brightness:1 alpha:1];
+    self.mview.backgroundColor = [UIColor colorWithHue:270/360.0 saturation:1 brightness:1 alpha:1];
+    self.cview.backgroundColor = [UIColor colorWithHue:360/360.0 saturation:1 brightness:1 alpha:1];
+    
+    [self.pieChartData addObject:@(90)];
+    [self.pieChartData addObject:@(90)];
+    [self.pieChartData addObject:@(90)];
+    [self.pieChartData addObject:@(90)];
+    
+    [self.pieChart reloadChart];
+}
 
+- (NSUInteger)numberOfSlicesInChartView:(id)chartView
+{
+    return self.pieChartData.count;
+}
+
+- (CGFloat)percentOfTotalValueOfSliceAtIndexpath:(NSIndexPath *)indexPath chart:(id)chartView
+{
+    return [self.pieChartData[indexPath.row] floatValue];
+}
+
+- (UIColor *)colorForSliceAtIndexPath:(NSIndexPath *)indexPath slice:(id)pieSlice
+{
+    return [UIColor colorWithHue:((90+(indexPath.row *90))/360.0f) saturation:1 brightness:1 alpha:1.0f];
+}
 
 #pragma mark - Tap Animation
 - (void)mapContainerTapped

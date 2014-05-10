@@ -60,6 +60,8 @@
     self.dayLbl.text = [[self formatter]stringFromDate:[NSDate date]];
     [self.formatter setDateFormat:@"EEEE"];
     self.weekDayName.text = [self.formatter stringFromDate:[NSDate date]];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

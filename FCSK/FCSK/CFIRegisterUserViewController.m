@@ -51,7 +51,7 @@
     
     self.navigationController.navigationItem.rightBarButtonItem = barButtonItem;
     
-    
+    self.title = @"Register User";
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -60,6 +60,12 @@
     [super viewDidAppear:animated];
     contentSize = self.scrollView.contentSize;
     contentOffset = self.scrollView.contentOffset;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 

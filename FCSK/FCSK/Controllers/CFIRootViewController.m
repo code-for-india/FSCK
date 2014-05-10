@@ -14,10 +14,15 @@
 #import "CFIRegisterUserViewController.h"
 
 @interface CFIRootViewController ()
+
+@property(strong, nonatomic)NSDateFormatter *formatter;
+
 @property (weak, nonatomic) IBOutlet UIButton *statBtn;
 @property (weak, nonatomic) IBOutlet UIButton *scanBtn;
 @property (weak, nonatomic) IBOutlet UIButton *registerUserBtn;
 @property (weak, nonatomic) IBOutlet UIButton *mapBtn;
+@property (weak, nonatomic) IBOutlet UILabel *dayLbl;
+@property (weak, nonatomic) IBOutlet UILabel *weekDayName;
 
 @end
 
@@ -43,7 +48,18 @@
     [self.navigationController presentViewController:sign animated:NO completion:^{
         
     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
+    // update the label
+    self.formatter = [[NSDateFormatter alloc]init];
+    [self.formatter setDateFormat:@"MMM dd"];
+    self.dayLbl.text = [[self formatter]stringFromDate:[NSDate date]];
+    [self.formatter setDateFormat:@"EEEE"];
+    self.weekDayName.text = [self.formatter stringFromDate:[NSDate date]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,8 +79,8 @@
     [imageView setImage:[UIImage imageNamed:@"storm.jpg"]];
     [view addSubview:imageView];
     
-    UIToolbar *toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame)/2, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
-    [self.view addSubview:toolbar];
+    /*UIToolbar *toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame)/2, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
+    [self.view addSubview:toolbar];*/
     
     [self.view sendSubviewToBack:view];
     
@@ -72,6 +88,8 @@
     [self.view bringSubviewToFront:self.scanBtn];
     [self.view bringSubviewToFront:self.registerUserBtn];
     [self.view bringSubviewToFront:self.mapBtn];
+    [self.view bringSubviewToFront:self.dayLbl];
+    [self.view bringSubviewToFront:self.weekDayName];
 }
 
 #pragma mark - Button Actions

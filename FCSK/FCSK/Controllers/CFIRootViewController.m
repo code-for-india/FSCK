@@ -9,6 +9,10 @@
 #import "CFIRootViewController.h"
 
 @interface CFIRootViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *statBtn;
+@property (weak, nonatomic) IBOutlet UIButton *scanBtn;
+@property (weak, nonatomic) IBOutlet UIButton *registerUserBtn;
+@property (weak, nonatomic) IBOutlet UIButton *mapBtn;
 
 @end
 
@@ -33,6 +37,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Button Actions
+- (IBAction)statsButtonPressed:(id)sender {
+}
+
+- (IBAction)scanButtonPressed:(id)sender {
+}
+- (IBAction)registerUserButtonPressed:(id)sender {
+}
+- (IBAction)mapButtonPressed:(id)sender {
 }
 
 @end

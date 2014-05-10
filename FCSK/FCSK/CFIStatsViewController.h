@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CFIStatsViewController : UIViewController
+
+@interface CFIStatsViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

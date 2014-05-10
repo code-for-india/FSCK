@@ -64,6 +64,8 @@
 		C3B3F41E191E5D76006D5BB4 /* CFIRegisterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3F41C191E5D76006D5BB4 /* CFIRegisterUserViewController.m */; };
 		C3B3F41F191E5D76006D5BB4 /* CFIRegisterUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B3F41D191E5D76006D5BB4 /* CFIRegisterUserViewController.xib */; };
 		C3B3F421191E5DAC006D5BB4 /* CFIScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B3F420191E5DAC006D5BB4 /* CFIScanViewController.xib */; };
+		C3B3F425191E9D1E006D5BB4 /* CFIStatsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3F423191E9D1E006D5BB4 /* CFIStatsTableViewCell.m */; };
+		C3B3F426191E9D1E006D5BB4 /* CFIStatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B3F424191E9D1E006D5BB4 /* CFIStatsTableViewCell.xib */; };
 		C3E7EA45191E2853002EFA46 /* CFISignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */; };
 		C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */; };
 		C3E7EA4B191E2B8D002EFA46 /* input_field_email_address.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */; };
@@ -160,6 +162,9 @@
 		C3B3F41C191E5D76006D5BB4 /* CFIRegisterUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIRegisterUserViewController.m; sourceTree = "<group>"; };
 		C3B3F41D191E5D76006D5BB4 /* CFIRegisterUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFIRegisterUserViewController.xib; sourceTree = "<group>"; };
 		C3B3F420191E5DAC006D5BB4 /* CFIScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFIScanViewController.xib; sourceTree = "<group>"; };
+		C3B3F422191E9D1E006D5BB4 /* CFIStatsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIStatsTableViewCell.h; sourceTree = "<group>"; };
+		C3B3F423191E9D1E006D5BB4 /* CFIStatsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIStatsTableViewCell.m; sourceTree = "<group>"; };
+		C3B3F424191E9D1E006D5BB4 /* CFIStatsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFIStatsTableViewCell.xib; sourceTree = "<group>"; };
 		C3E7EA42191E2853002EFA46 /* CFISignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFISignInViewController.h; path = ../CFISignInViewController.h; sourceTree = "<group>"; };
 		C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFISignInViewController.m; path = ../CFISignInViewController.m; sourceTree = "<group>"; };
 		C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CFISignInViewController.xib; path = ../CFISignInViewController.xib; sourceTree = "<group>"; };
@@ -379,6 +384,7 @@
 				C3B3F41D191E5D76006D5BB4 /* CFIRegisterUserViewController.xib */,
 				4F255527191E709B00B7B775 /* CFIStatsViewController.h */,
 				4F255528191E709B00B7B775 /* CFIStatsViewController.m */,
+				C3B3F427191E9D28006D5BB4 /* Custom Cells */,
 				4F255529191E709B00B7B775 /* CFIStatsViewController.xib */,
 			);
 			name = Controllers;
@@ -399,6 +405,16 @@
 			);
 			path = Model;
 			sourceTree = SOURCE_ROOT;
+		};
+		C3B3F427191E9D28006D5BB4 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C3B3F422191E9D1E006D5BB4 /* CFIStatsTableViewCell.h */,
+				C3B3F423191E9D1E006D5BB4 /* CFIStatsTableViewCell.m */,
+				C3B3F424191E9D1E006D5BB4 /* CFIStatsTableViewCell.xib */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -476,6 +492,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B3F426191E9D1E006D5BB4 /* CFIStatsTableViewCell.xib in Resources */,
 				C3B3F421191E5DAC006D5BB4 /* CFIScanViewController.xib in Resources */,
 				4F25552D191E718D00B7B775 /* storm_dark.jpg in Resources */,
 				4F255533191E8BED00B7B775 /* ico_curr_loc.png in Resources */,
@@ -537,6 +554,7 @@
 				C3B3F41A191E4469006D5BB4 /* UIAlertView+Blocks.m in Sources */,
 				C3B3F41E191E5D76006D5BB4 /* CFIRegisterUserViewController.m in Sources */,
 				C3E7EA5E191E3272002EFA46 /* SCShapeView.m in Sources */,
+				C3B3F425191E9D1E006D5BB4 /* CFIStatsTableViewCell.m in Sources */,
 				4F441915191DDE17005EE6F5 /* CFIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

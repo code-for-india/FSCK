@@ -13,8 +13,10 @@
 @property (weak, nonatomic) IBOutlet UIView *boothInfoView;
 @property (weak, nonatomic) IBOutlet UILabel *boothName;
 @property (weak, nonatomic) IBOutlet UILabel *boothAddress;
+
 @property (weak, nonatomic) IBOutlet UIView *mapContainerView;
 @property (strong, nonatomic) GMSMapView *mapView;
+@property (weak, nonatomic) IBOutlet UITableView *mapTableView;
 
 @end
 
@@ -87,10 +89,35 @@
     //if(animate)
     //[self.locationCircleArray addObject:circle];
 }
+
+
+
 #pragma mark - Tap Animation
 - (void)mapContainerTapped
 {
-
+    
 }
+
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return nil;
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
 
 @end

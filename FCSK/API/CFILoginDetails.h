@@ -8,8 +8,10 @@
 
 #import "CFIApi.h"
 
-@interface MPMuseumItemDetails : CFIApi
+@interface CFILoginDetails : CFIApi
 
 - (void)getMuseumDataWithUDID:(NSString *)UDID ID:(NSString *)ID majorId:(NSString *)majorID minorID:(NSString *)minorID callback:(responseCallBack)callback;
+
+-(void) loginWithUserName:(NSString *)username passWord:(NSString *)password callBack:(responseCallBack) callBack;
 
 @end

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F117619191DF0BB00C0000D /* CFIApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117614191DF0BB00C0000D /* CFIApi.m */; };
 		4F11761A191DF0BB00C0000D /* MPMuseumDataApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117616191DF0BB00C0000D /* MPMuseumDataApi.m */; };
-		4F11761B191DF0BB00C0000D /* MPMuseumItemDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117618191DF0BB00C0000D /* MPMuseumItemDetails.m */; };
+		4F11761B191DF0BB00C0000D /* CFILoginDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117618191DF0BB00C0000D /* CFILoginDetails.m */; };
 		4F11761E191DF1A100C0000D /* CFILocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F11761D191DF1A100C0000D /* CFILocation.m */; };
 		4F117621191DF24B00C0000D /* CFIIncidentLoacation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117620191DF24B00C0000D /* CFIIncidentLoacation.m */; };
 		4F117627191E270E00C0000D /* CFIRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117625191E270E00C0000D /* CFIRootViewController.m */; };
@@ -44,11 +44,13 @@
 		4F44193C191DEB7E005EE6F5 /* CFIBaseitem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F441939191DEB7E005EE6F5 /* CFIBaseitem.m */; };
 		4F44193D191DEB7E005EE6F5 /* CFIUserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */; };
 		C3B3F41A191E4469006D5BB4 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3F419191E4469006D5BB4 /* UIAlertView+Blocks.m */; };
+		C3B3F41E191E5D76006D5BB4 /* CFIRegisterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3F41C191E5D76006D5BB4 /* CFIRegisterUserViewController.m */; };
+		C3B3F41F191E5D76006D5BB4 /* CFIRegisterUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B3F41D191E5D76006D5BB4 /* CFIRegisterUserViewController.xib */; };
+		C3B3F421191E5DAC006D5BB4 /* CFIScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B3F420191E5DAC006D5BB4 /* CFIScanViewController.xib */; };
 		C3E7EA45191E2853002EFA46 /* CFISignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */; };
 		C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */; };
 		C3E7EA4B191E2B8D002EFA46 /* input_field_email_address.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */; };
 		C3E7EA4C191E2B8D002EFA46 /* input_field_email_address@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA4A191E2B8D002EFA46 /* input_field_email_address@2x.png */; };
-		C3E7EA51191E30D0002EFA46 /* CFIScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */; };
 		C3E7EA56191E31CD002EFA46 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA53191E31CD002EFA46 /* SCViewController.m */; };
 		C3E7EA58191E31CD002EFA46 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA55191E31CD002EFA46 /* beep.mp3 */; };
 		C3E7EA5B191E3240002EFA46 /* KSXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA5A191E3240002EFA46 /* KSXMLParser.m */; };
@@ -70,8 +72,8 @@
 		4F117614191DF0BB00C0000D /* CFIApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIApi.m; sourceTree = "<group>"; };
 		4F117615191DF0BB00C0000D /* MPMuseumDataApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMuseumDataApi.h; sourceTree = "<group>"; };
 		4F117616191DF0BB00C0000D /* MPMuseumDataApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMuseumDataApi.m; sourceTree = "<group>"; };
-		4F117617191DF0BB00C0000D /* MPMuseumItemDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMuseumItemDetails.h; sourceTree = "<group>"; };
-		4F117618191DF0BB00C0000D /* MPMuseumItemDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMuseumItemDetails.m; sourceTree = "<group>"; };
+		4F117617191DF0BB00C0000D /* CFILoginDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFILoginDetails.h; sourceTree = "<group>"; };
+		4F117618191DF0BB00C0000D /* CFILoginDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFILoginDetails.m; sourceTree = "<group>"; };
 		4F11761C191DF1A100C0000D /* CFILocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFILocation.h; sourceTree = "<group>"; };
 		4F11761D191DF1A100C0000D /* CFILocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFILocation.m; sourceTree = "<group>"; };
 		4F11761F191DF24B00C0000D /* CFIIncidentLoacation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIIncidentLoacation.h; sourceTree = "<group>"; };
@@ -118,12 +120,15 @@
 		4F44193E191DEC22005EE6F5 /* Enumerations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enumerations.h; sourceTree = "<group>"; };
 		C3B3F418191E4469006D5BB4 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		C3B3F419191E4469006D5BB4 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		C3B3F41B191E5D76006D5BB4 /* CFIRegisterUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIRegisterUserViewController.h; sourceTree = "<group>"; };
+		C3B3F41C191E5D76006D5BB4 /* CFIRegisterUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIRegisterUserViewController.m; sourceTree = "<group>"; };
+		C3B3F41D191E5D76006D5BB4 /* CFIRegisterUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFIRegisterUserViewController.xib; sourceTree = "<group>"; };
+		C3B3F420191E5DAC006D5BB4 /* CFIScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFIScanViewController.xib; sourceTree = "<group>"; };
 		C3E7EA42191E2853002EFA46 /* CFISignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFISignInViewController.h; path = ../CFISignInViewController.h; sourceTree = "<group>"; };
 		C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFISignInViewController.m; path = ../CFISignInViewController.m; sourceTree = "<group>"; };
 		C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CFISignInViewController.xib; path = ../CFISignInViewController.xib; sourceTree = "<group>"; };
 		C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = input_field_email_address.png; sourceTree = "<group>"; };
 		C3E7EA4A191E2B8D002EFA46 /* input_field_email_address@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input_field_email_address@2x.png"; sourceTree = "<group>"; };
-		C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFIScanViewController.xib; sourceTree = "<group>"; };
 		C3E7EA52191E31CD002EFA46 /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCViewController.h; path = ../Model/SCViewController.h; sourceTree = "<group>"; };
 		C3E7EA53191E31CD002EFA46 /* SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCViewController.m; path = ../Model/SCViewController.m; sourceTree = "<group>"; };
 		C3E7EA55191E31CD002EFA46 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beep.mp3; path = ../Model/beep.mp3; sourceTree = "<group>"; };
@@ -177,8 +182,8 @@
 				4F117614191DF0BB00C0000D /* CFIApi.m */,
 				4F117615191DF0BB00C0000D /* MPMuseumDataApi.h */,
 				4F117616191DF0BB00C0000D /* MPMuseumDataApi.m */,
-				4F117617191DF0BB00C0000D /* MPMuseumItemDetails.h */,
-				4F117618191DF0BB00C0000D /* MPMuseumItemDetails.m */,
+				4F117617191DF0BB00C0000D /* CFILoginDetails.h */,
+				4F117618191DF0BB00C0000D /* CFILoginDetails.m */,
 			);
 			path = API;
 			sourceTree = SOURCE_ROOT;
@@ -238,7 +243,7 @@
 				C3E7EA5D191E3272002EFA46 /* SCShapeView.m */,
 				C3E7EA52191E31CD002EFA46 /* SCViewController.h */,
 				C3E7EA53191E31CD002EFA46 /* SCViewController.m */,
-				C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */,
+				C3B3F420191E5DAC006D5BB4 /* CFIScanViewController.xib */,
 				C3E7EA55191E31CD002EFA46 /* beep.mp3 */,
 				4F117612191DF0BB00C0000D /* API */,
 				4F441937191DEB7E005EE6F5 /* Model */,
@@ -293,9 +298,9 @@
 				4F117626191E270E00C0000D /* CFIRootViewController.xib */,
 				4F255501191E36AB00B7B775 /* CFIMapViewController.h */,
 				4F255502191E36AB00B7B775 /* CFIMapViewController.m */,
-				C3E7EA4D191E30D0002EFA46 /* CFIScanViewController.h */,
-				C3E7EA4E191E30D0002EFA46 /* CFIScanViewController.m */,
-				C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */,:
+				C3B3F41B191E5D76006D5BB4 /* CFIRegisterUserViewController.h */,
+				C3B3F41C191E5D76006D5BB4 /* CFIRegisterUserViewController.m */,
+				C3B3F41D191E5D76006D5BB4 /* CFIRegisterUserViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -392,11 +397,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B3F421191E5DAC006D5BB4 /* CFIScanViewController.xib in Resources */,
 				C3E7EA4B191E2B8D002EFA46 /* input_field_email_address.png in Resources */,
+				C3B3F41F191E5D76006D5BB4 /* CFIRegisterUserViewController.xib in Resources */,
 				4F117628191E270E00C0000D /* CFIRootViewController.xib in Resources */,
 				C3E7EA58191E31CD002EFA46 /* beep.mp3 in Resources */,
 				C3E7EA4C191E2B8D002EFA46 /* input_field_email_address@2x.png in Resources */,
-				C3E7EA51191E30D0002EFA46 /* CFIScanViewController.xib in Resources */,
 				C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */,
 				4F44190F191DDE17005EE6F5 /* InfoPlist.strings in Resources */,
 				4F441917191DDE17005EE6F5 /* Images.xcassets in Resources */,
@@ -431,8 +437,9 @@
 				4F44193C191DEB7E005EE6F5 /* CFIBaseitem.m in Sources */,
 				C3E7EA5B191E3240002EFA46 /* KSXMLParser.m in Sources */,
 				4F117627191E270E00C0000D /* CFIRootViewController.m in Sources */,
-				4F11761B191DF0BB00C0000D /* MPMuseumItemDetails.m in Sources */,
+				4F11761B191DF0BB00C0000D /* CFILoginDetails.m in Sources */,
 				C3B3F41A191E4469006D5BB4 /* UIAlertView+Blocks.m in Sources */,
+				C3B3F41E191E5D76006D5BB4 /* CFIRegisterUserViewController.m in Sources */,
 				C3E7EA5E191E3272002EFA46 /* SCShapeView.m in Sources */,
 				4F441915191DDE17005EE6F5 /* CFIAppDelegate.m in Sources */,
 			);

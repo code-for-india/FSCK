@@ -19,4 +19,6 @@
 
 @interface SCViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 @property(strong,nonatomic)NSMutableDictionary *userDataDictionary;
+@property (nonatomic) BOOL hasUserRegistered;
+
 @end

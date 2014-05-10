@@ -8,7 +8,6 @@
 
 #import "CFILoginDetails.h"
 
-#import "<#header#>"
 
 @implementation CFILoginDetails
 

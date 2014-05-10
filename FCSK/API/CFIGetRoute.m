@@ -18,7 +18,7 @@
     
     // this is a POST request
     // http://maps.googleapis.com/maps/api/directions/json?origin=%f,%f&destination=%f,%f&sensor=true&mode=%@
-    NSString *urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/directions/json?origin=%f,%f&destination=%f,%f&sensor=true&key=%@",[from.latitude floatValue],[from.longitude floatValue],[to.latitude floatValue],[to.longitude floatValue],@"AIzaSyDXMaoTbM3YmtQBnGHqIKeE5lv9nksV2vM"];
+    NSString *urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/directions/json?origin=Hubli&destination=Bangalore&sensor=true&key=%@",@"AIzaSyDXMaoTbM3YmtQBnGHqIKeE5lv9nksV2vM"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
     [request setHTTPMethod:@"GET"];
     
@@ -46,20 +46,11 @@
 }
 
 #pragma mark - Parse Route
-- (NSArray *)parseRoute:(NSDictionary *)dictionary
+- (NSString *)parseRoute:(NSDictionary *)dictionary
 {
     NSArray *routes = dictionary[@"routes"];
-    NSArray *legs = [[routes objectAtIndex:0] objectForKey:@"legs"];
-    NSArray *steps = [[legs objectAtIndex:0] objectForKey:@"steps"];
-    
-    NSMutableArray *array = [NSMutableArray arrayWithCapacity:steps.count];
-    for(NSDictionary *dict in steps)
-    {
-        NSDictionary *location = dict[@"end_location"];
-        [array addObject:[[CLLocation alloc] initWithLatitude:[location[@"lat"] floatValue] longitude:[location[@"lng"] floatValue]]];
-    }
-    
-    return array;
+    NSDictionary *path = [[routes objectAtIndex:0] objectForKey:@"overview_polyline"];
+    return path[@"points"];
 }
 
 

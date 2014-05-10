@@ -61,13 +61,9 @@
     location1.longitude = @75.08;
     
     CFIGetRoute *route = [[CFIGetRoute alloc]init];
-    [route getRouteFrom:location to:location1 callback:^(NSArray *responseData, NSError *error, BOOL success) {
+    [route getRouteFrom:location to:location1 callback:^(NSString *responseData, NSError *error, BOOL success) {
         
-        GMSMutablePath *path = [GMSMutablePath path];
-        [responseData enumerateObjectsUsingBlock:^(CLLocation *obj, NSUInteger idx, BOOL *stop) {
-           [path addCoordinate:CLLocationCoordinate2DMake(obj.coordinate.latitude, obj.coordinate.longitude)];
-        }];
-        
+        GMSMutablePath *path = [GMSMutablePath pathFromEncodedPath:responseData];
         dispatch_async(dispatch_get_main_queue(), ^{
             GMSPolyline *rectangle = [GMSPolyline polylineWithPath:path];
             rectangle.strokeWidth = 2.;

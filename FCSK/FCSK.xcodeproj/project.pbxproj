@@ -28,6 +28,8 @@
 		4F44192A191DDE17005EE6F5 /* FCSKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F441929191DDE17005EE6F5 /* FCSKTests.m */; };
 		4F44193C191DEB7E005EE6F5 /* CFIBaseitem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F441939191DEB7E005EE6F5 /* CFIBaseitem.m */; };
 		4F44193D191DEB7E005EE6F5 /* CFIUserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */; };
+		C3E7EA45191E2853002EFA46 /* CFISignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */; };
+		C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,9 @@
 		4F44193A191DEB7E005EE6F5 /* CFIUserDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIUserDetails.h; sourceTree = "<group>"; };
 		4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIUserDetails.m; sourceTree = "<group>"; };
 		4F44193E191DEC22005EE6F5 /* Enumerations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enumerations.h; sourceTree = "<group>"; };
+		C3E7EA42191E2853002EFA46 /* CFISignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFISignInViewController.h; path = ../CFISignInViewController.h; sourceTree = "<group>"; };
+		C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFISignInViewController.m; path = ../CFISignInViewController.m; sourceTree = "<group>"; };
+		C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CFISignInViewController.xib; path = ../CFISignInViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +195,9 @@
 		4F441933191DDE2D005EE6F5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C3E7EA42191E2853002EFA46 /* CFISignInViewController.h */,
+				C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */,
+				C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */,
 				4F117624191E270E00C0000D /* CFIRootViewController.h */,
 				4F117625191E270E00C0000D /* CFIRootViewController.m */,
 				4F117626191E270E00C0000D /* CFIRootViewController.xib */,
@@ -290,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F117628191E270E00C0000D /* CFIRootViewController.xib in Resources */,
+				C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */,
 				4F44190F191DDE17005EE6F5 /* InfoPlist.strings in Resources */,
 				4F441917191DDE17005EE6F5 /* Images.xcassets in Resources */,
 			);
@@ -313,6 +322,7 @@
 				4F44193D191DEB7E005EE6F5 /* CFIUserDetails.m in Sources */,
 				4F441911191DDE17005EE6F5 /* main.m in Sources */,
 				4F11761A191DF0BB00C0000D /* MPMuseumDataApi.m in Sources */,
+				C3E7EA45191E2853002EFA46 /* CFISignInViewController.m in Sources */,
 				4F117621191DF24B00C0000D /* CFIIncidentLoacation.m in Sources */,
 				4F117619191DF0BB00C0000D /* CFIApi.m in Sources */,
 				4F11761E191DF1A100C0000D /* CFILocation.m in Sources */,

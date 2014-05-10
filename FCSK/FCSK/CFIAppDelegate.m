@@ -7,6 +7,7 @@
 //
 
 #import "CFIAppDelegate.h"
+#import "CFIRootViewController.h"
 
 @implementation CFIAppDelegate
 
@@ -15,6 +16,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.rootController = [[CFIRootViewController alloc]init];
+    self.window.rootViewController = self.rootController;
     [self.window makeKeyAndVisible];
     return YES;
 }

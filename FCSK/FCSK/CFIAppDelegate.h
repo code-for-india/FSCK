@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class CFIRootViewController;
+
 @interface CFIAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) CFIRootViewController *rootController;
 
 @end

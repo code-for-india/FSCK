@@ -8,7 +8,6 @@
 
 #import "CFILoginDetails.h"
 
-
 @implementation CFILoginDetails
 
 - (void)getMuseumDataWithUDID:(NSString *)UDID ID:(NSString *)ID majorId:(NSString *)majorID minorID:(NSString *)minorID callback:(responseCallBack)callback

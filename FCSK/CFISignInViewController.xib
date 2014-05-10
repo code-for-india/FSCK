@@ -64,6 +64,6 @@
     </objects>
     <resources>
         <image name="input_field_email_address.png" width="261" height="41"/>
-        <image name="login_divider_line.png" width="2" height="470"/>
+        <image name="login_divider_line.png" width="261" height="41"/>
     </resources>
 </document>

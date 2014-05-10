@@ -45,6 +45,15 @@
 		4F44193D191DEB7E005EE6F5 /* CFIUserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */; };
 		C3E7EA45191E2853002EFA46 /* CFISignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */; };
 		C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */; };
+		C3E7EA4B191E2B8D002EFA46 /* input_field_email_address.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */; };
+		C3E7EA4C191E2B8D002EFA46 /* input_field_email_address@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA4A191E2B8D002EFA46 /* input_field_email_address@2x.png */; };
+		C3E7EA50191E30D0002EFA46 /* CFIScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA4E191E30D0002EFA46 /* CFIScanViewController.m */; };
+		C3E7EA51191E30D0002EFA46 /* CFIScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */; };
+		C3E7EA56191E31CD002EFA46 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA53191E31CD002EFA46 /* SCViewController.m */; };
+		C3E7EA57191E31CD002EFA46 /* SCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA54191E31CD002EFA46 /* SCViewController.xib */; };
+		C3E7EA58191E31CD002EFA46 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA55191E31CD002EFA46 /* beep.mp3 */; };
+		C3E7EA5B191E3240002EFA46 /* KSXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA5A191E3240002EFA46 /* KSXMLParser.m */; };
+		C3E7EA5E191E3272002EFA46 /* SCShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA5D191E3272002EFA46 /* SCShapeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +120,19 @@
 		C3E7EA42191E2853002EFA46 /* CFISignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFISignInViewController.h; path = ../CFISignInViewController.h; sourceTree = "<group>"; };
 		C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFISignInViewController.m; path = ../CFISignInViewController.m; sourceTree = "<group>"; };
 		C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CFISignInViewController.xib; path = ../CFISignInViewController.xib; sourceTree = "<group>"; };
+		C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = input_field_email_address.png; sourceTree = "<group>"; };
+		C3E7EA4A191E2B8D002EFA46 /* input_field_email_address@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input_field_email_address@2x.png"; sourceTree = "<group>"; };
+		C3E7EA4D191E30D0002EFA46 /* CFIScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIScanViewController.h; sourceTree = "<group>"; };
+		C3E7EA4E191E30D0002EFA46 /* CFIScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIScanViewController.m; sourceTree = "<group>"; };
+		C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFIScanViewController.xib; sourceTree = "<group>"; };
+		C3E7EA52191E31CD002EFA46 /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCViewController.h; path = ../Model/SCViewController.h; sourceTree = "<group>"; };
+		C3E7EA53191E31CD002EFA46 /* SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCViewController.m; path = ../Model/SCViewController.m; sourceTree = "<group>"; };
+		C3E7EA54191E31CD002EFA46 /* SCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SCViewController.xib; path = ../Model/SCViewController.xib; sourceTree = "<group>"; };
+		C3E7EA55191E31CD002EFA46 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beep.mp3; path = ../Model/beep.mp3; sourceTree = "<group>"; };
+		C3E7EA59191E3240002EFA46 /* KSXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSXMLParser.h; sourceTree = "<group>"; };
+		C3E7EA5A191E3240002EFA46 /* KSXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSXMLParser.m; sourceTree = "<group>"; };
+		C3E7EA5C191E3272002EFA46 /* SCShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCShapeView.h; sourceTree = "<group>"; };
+		C3E7EA5D191E3272002EFA46 /* SCShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCShapeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,11 +232,21 @@
 		4F44190A191DDE16005EE6F5 /* FCSK */ = {
 			isa = PBXGroup;
 			children = (
+				C3E7EA59191E3240002EFA46 /* KSXMLParser.h */,
+				C3E7EA5A191E3240002EFA46 /* KSXMLParser.m */,
+				C3E7EA5C191E3272002EFA46 /* SCShapeView.h */,
+				C3E7EA5D191E3272002EFA46 /* SCShapeView.m */,
+				C3E7EA52191E31CD002EFA46 /* SCViewController.h */,
+				C3E7EA53191E31CD002EFA46 /* SCViewController.m */,
+				C3E7EA54191E31CD002EFA46 /* SCViewController.xib */,
+				C3E7EA55191E31CD002EFA46 /* beep.mp3 */,
 				4F117612191DF0BB00C0000D /* API */,
 				4F441937191DEB7E005EE6F5 /* Model */,
 				4F441933191DDE2D005EE6F5 /* Controllers */,
 				4F441913191DDE17005EE6F5 /* CFIAppDelegate.h */,
 				4F441914191DDE17005EE6F5 /* CFIAppDelegate.m */,
+				C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */,
+				C3E7EA4A191E2B8D002EFA46 /* input_field_email_address@2x.png */,
 				4F441916191DDE17005EE6F5 /* Images.xcassets */,
 				4F44190B191DDE16005EE6F5 /* Supporting Files */,
 			);
@@ -261,6 +293,9 @@
 				4F117626191E270E00C0000D /* CFIRootViewController.xib */,
 				4F255501191E36AB00B7B775 /* CFIMapViewController.h */,
 				4F255502191E36AB00B7B775 /* CFIMapViewController.m */,
+				C3E7EA4D191E30D0002EFA46 /* CFIScanViewController.h */,
+				C3E7EA4E191E30D0002EFA46 /* CFIScanViewController.m */,
+				C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */,:
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -357,7 +392,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E7EA4B191E2B8D002EFA46 /* input_field_email_address.png in Resources */,
 				4F117628191E270E00C0000D /* CFIRootViewController.xib in Resources */,
+				C3E7EA58191E31CD002EFA46 /* beep.mp3 in Resources */,
+				C3E7EA57191E31CD002EFA46 /* SCViewController.xib in Resources */,
+				C3E7EA4C191E2B8D002EFA46 /* input_field_email_address@2x.png in Resources */,
+				C3E7EA51191E30D0002EFA46 /* CFIScanViewController.xib in Resources */,
 				C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */,
 				4F44190F191DDE17005EE6F5 /* InfoPlist.strings in Resources */,
 				4F441917191DDE17005EE6F5 /* Images.xcassets in Resources */,
@@ -383,14 +423,18 @@
 				4F44193D191DEB7E005EE6F5 /* CFIUserDetails.m in Sources */,
 				4F441911191DDE17005EE6F5 /* main.m in Sources */,
 				4F11761A191DF0BB00C0000D /* MPMuseumDataApi.m in Sources */,
+				C3E7EA56191E31CD002EFA46 /* SCViewController.m in Sources */,
 				C3E7EA45191E2853002EFA46 /* CFISignInViewController.m in Sources */,
 				4F255503191E36AB00B7B775 /* CFIMapViewController.m in Sources */,
 				4F117621191DF24B00C0000D /* CFIIncidentLoacation.m in Sources */,
 				4F117619191DF0BB00C0000D /* CFIApi.m in Sources */,
 				4F11761E191DF1A100C0000D /* CFILocation.m in Sources */,
 				4F44193C191DEB7E005EE6F5 /* CFIBaseitem.m in Sources */,
+				C3E7EA50191E30D0002EFA46 /* CFIScanViewController.m in Sources */,
+				C3E7EA5B191E3240002EFA46 /* KSXMLParser.m in Sources */,
 				4F117627191E270E00C0000D /* CFIRootViewController.m in Sources */,
 				4F11761B191DF0BB00C0000D /* MPMuseumItemDetails.m in Sources */,
+				C3E7EA5E191E3272002EFA46 /* SCShapeView.m in Sources */,
 				4F441915191DDE17005EE6F5 /* CFIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

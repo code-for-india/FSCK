@@ -1,5 +1,5 @@
 //
-//  CFISignInViewController.h
+//  CFIScanViewController.h
 //  FCSK
 //
 //  Created by shashank on 10/05/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CFISignInViewController : UIViewController<UITextFieldDelegate>
+@interface CFIScanViewController : UIViewController
 
 @end

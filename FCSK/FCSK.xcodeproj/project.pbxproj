@@ -20,6 +20,12 @@
 		4F441928191DDE17005EE6F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F441926191DDE17005EE6F5 /* InfoPlist.strings */; };
 		4F44192A191DDE17005EE6F5 /* FCSKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F441929191DDE17005EE6F5 /* FCSKTests.m */; };
 		4F441936191DDE6D005EE6F5 /* CFIRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F441935191DDE6D005EE6F5 /* CFIRootViewController.m */; };
+		C3E7EA35191DEB8D002EFA46 /* CFIRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA34191DEB8D002EFA46 /* CFIRegisterViewController.m */; };
+		C3E7EA37191DEBC3002EFA46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA36191DEBC3002EFA46 /* Main.storyboard */; };
+		C3E7EA39191DEC95002EFA46 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA38191DEC95002EFA46 /* Register.storyboard */; };
+		C3E7EA3C191DF0E9002EFA46 /* input_field_email_address.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA3A191DF0E9002EFA46 /* input_field_email_address.png */; };
+		C3E7EA3D191DF0E9002EFA46 /* input_field_email_address@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA3B191DF0E9002EFA46 /* input_field_email_address@2x.png */; };
+		C3E7EA41191E07FB002EFA46 /* CFISignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA40191E07FB002EFA46 /* CFISignInViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,14 @@
 		4F441929191DDE17005EE6F5 /* FCSKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCSKTests.m; sourceTree = "<group>"; };
 		4F441934191DDE6D005EE6F5 /* CFIRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFIRootViewController.h; path = Controllers/CFIRootViewController.h; sourceTree = SOURCE_ROOT; };
 		4F441935191DDE6D005EE6F5 /* CFIRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFIRootViewController.m; path = Controllers/CFIRootViewController.m; sourceTree = SOURCE_ROOT; };
+		C3E7EA33191DEB8D002EFA46 /* CFIRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFIRegisterViewController.h; path = Controllers/Register/CFIRegisterViewController.h; sourceTree = "<group>"; };
+		C3E7EA34191DEB8D002EFA46 /* CFIRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFIRegisterViewController.m; path = Controllers/Register/CFIRegisterViewController.m; sourceTree = "<group>"; };
+		C3E7EA36191DEBC3002EFA46 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C3E7EA38191DEC95002EFA46 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		C3E7EA3A191DF0E9002EFA46 /* input_field_email_address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = input_field_email_address.png; sourceTree = "<group>"; };
+		C3E7EA3B191DF0E9002EFA46 /* input_field_email_address@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input_field_email_address@2x.png"; sourceTree = "<group>"; };
+		C3E7EA3F191E07FB002EFA46 /* CFISignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFISignInViewController.h; path = Controllers/CFISignInViewController.h; sourceTree = "<group>"; };
+		C3E7EA40191E07FB002EFA46 /* CFISignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFISignInViewController.m; path = Controllers/CFISignInViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +124,8 @@
 		4F44190A191DDE16005EE6F5 /* FCSK */ = {
 			isa = PBXGroup;
 			children = (
+				C3E7EA36191DEBC3002EFA46 /* Main.storyboard */,
+				C3E7EA38191DEC95002EFA46 /* Register.storyboard */,
 				4F441933191DDE2D005EE6F5 /* Controllers */,
 				4F441913191DDE17005EE6F5 /* CFIAppDelegate.h */,
 				4F441914191DDE17005EE6F5 /* CFIAppDelegate.m */,
@@ -122,6 +138,7 @@
 		4F44190B191DDE16005EE6F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3E7EA3E191DF0F3002EFA46 /* Images */,
 				4F44190C191DDE16005EE6F5 /* FCSK-Info.plist */,
 				4F44190D191DDE17005EE6F5 /* InfoPlist.strings */,
 				4F441910191DDE17005EE6F5 /* main.m */,
@@ -153,8 +170,21 @@
 			children = (
 				4F441934191DDE6D005EE6F5 /* CFIRootViewController.h */,
 				4F441935191DDE6D005EE6F5 /* CFIRootViewController.m */,
+				C3E7EA33191DEB8D002EFA46 /* CFIRegisterViewController.h */,
+				C3E7EA34191DEB8D002EFA46 /* CFIRegisterViewController.m */,
+				C3E7EA3F191E07FB002EFA46 /* CFISignInViewController.h */,
+				C3E7EA40191E07FB002EFA46 /* CFISignInViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C3E7EA3E191DF0F3002EFA46 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C3E7EA3A191DF0E9002EFA46 /* input_field_email_address.png */,
+				C3E7EA3B191DF0E9002EFA46 /* input_field_email_address@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +263,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E7EA3C191DF0E9002EFA46 /* input_field_email_address.png in Resources */,
+				C3E7EA37191DEBC3002EFA46 /* Main.storyboard in Resources */,
+				C3E7EA3D191DF0E9002EFA46 /* input_field_email_address@2x.png in Resources */,
 				4F44190F191DDE17005EE6F5 /* InfoPlist.strings in Resources */,
 				4F441917191DDE17005EE6F5 /* Images.xcassets in Resources */,
+				C3E7EA39191DEC95002EFA46 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,9 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E7EA35191DEB8D002EFA46 /* CFIRegisterViewController.m in Sources */,
 				4F441911191DDE17005EE6F5 /* main.m in Sources */,
 				4F441936191DDE6D005EE6F5 /* CFIRootViewController.m in Sources */,
 				4F441915191DDE17005EE6F5 /* CFIAppDelegate.m in Sources */,
+				C3E7EA41191E07FB002EFA46 /* CFISignInViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +488,7 @@
 				4F44192F191DDE17005EE6F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F441930191DDE17005EE6F5 /* Build configuration list for PBXNativeTarget "FCSKTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +497,7 @@
 				4F441932191DDE17005EE6F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,6 +20,10 @@
     self.rootController = [[CFIRootViewController alloc]init];
     self.window.rootViewController = self.rootController;
     [self.window makeKeyAndVisible];
+    
+    
+    
+    
     return YES;
 }
 

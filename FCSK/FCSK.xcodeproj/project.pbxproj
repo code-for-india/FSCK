@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F117619191DF0BB00C0000D /* CFIApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117614191DF0BB00C0000D /* CFIApi.m */; };
 		4F11761A191DF0BB00C0000D /* MPMuseumDataApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117616191DF0BB00C0000D /* MPMuseumDataApi.m */; };
-		4F11761B191DF0BB00C0000D /* CFILoginDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117618191DF0BB00C0000D /* CFILoginDetails.m */; };
+		4F11761B191DF0BB00C0000D /* CFILogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117618191DF0BB00C0000D /* CFILogin.m */; };
 		4F11761E191DF1A100C0000D /* CFILocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F11761D191DF1A100C0000D /* CFILocation.m */; };
 		4F117621191DF24B00C0000D /* CFIIncidentLoacation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117620191DF24B00C0000D /* CFIIncidentLoacation.m */; };
 		4F117627191E270E00C0000D /* CFIRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F117625191E270E00C0000D /* CFIRootViewController.m */; };
@@ -46,6 +46,12 @@
 		4F255534191E8BED00B7B775 /* ico_curr_loc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255530191E8BED00B7B775 /* ico_curr_loc@2x.png */; };
 		4F255535191E8BED00B7B775 /* ico_diff_loc.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255531191E8BED00B7B775 /* ico_diff_loc.png */; };
 		4F255536191E8BED00B7B775 /* ico_diff_loc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255532191E8BED00B7B775 /* ico_diff_loc@2x.png */; };
+		4F255539191E966E00B7B775 /* CFICurrentBooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F255538191E966E00B7B775 /* CFICurrentBooth.m */; };
+		4F25553C191E975400B7B775 /* CFIBooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F25553B191E975400B7B775 /* CFIBooth.m */; };
+		4F25553F191E979A00B7B775 /* CFIGetRegionCheckPosts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F25553E191E979A00B7B775 /* CFIGetRegionCheckPosts.m */; };
+		4F255542191E9A2C00B7B775 /* CFIGetCheckPostDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F255541191E9A2C00B7B775 /* CFIGetCheckPostDetails.m */; };
+		4F255545191E9BB200B7B775 /* CFIRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F255544191E9BB200B7B775 /* CFIRegion.m */; };
+		4F255548191E9DB000B7B775 /* CFIShareRegionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F255547191E9DB000B7B775 /* CFIShareRegionInfo.m */; };
 		4F441905191DDE16005EE6F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441904191DDE16005EE6F5 /* Foundation.framework */; };
 		4F441907191DDE16005EE6F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441906191DDE16005EE6F5 /* CoreGraphics.framework */; };
 		4F441909191DDE16005EE6F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441908191DDE16005EE6F5 /* UIKit.framework */; };
@@ -89,8 +95,8 @@
 		4F117614191DF0BB00C0000D /* CFIApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIApi.m; sourceTree = "<group>"; };
 		4F117615191DF0BB00C0000D /* MPMuseumDataApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMuseumDataApi.h; sourceTree = "<group>"; };
 		4F117616191DF0BB00C0000D /* MPMuseumDataApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMuseumDataApi.m; sourceTree = "<group>"; };
-		4F117617191DF0BB00C0000D /* CFILoginDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFILoginDetails.h; sourceTree = "<group>"; };
-		4F117618191DF0BB00C0000D /* CFILoginDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFILoginDetails.m; sourceTree = "<group>"; };
+		4F117617191DF0BB00C0000D /* CFILogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFILogin.h; sourceTree = "<group>"; };
+		4F117618191DF0BB00C0000D /* CFILogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFILogin.m; sourceTree = "<group>"; };
 		4F11761C191DF1A100C0000D /* CFILocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFILocation.h; sourceTree = "<group>"; };
 		4F11761D191DF1A100C0000D /* CFILocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFILocation.m; sourceTree = "<group>"; };
 		4F11761F191DF24B00C0000D /* CFIIncidentLoacation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIIncidentLoacation.h; sourceTree = "<group>"; };
@@ -133,6 +139,18 @@
 		4F255530191E8BED00B7B775 /* ico_curr_loc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_curr_loc@2x.png"; sourceTree = "<group>"; };
 		4F255531191E8BED00B7B775 /* ico_diff_loc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_diff_loc.png; sourceTree = "<group>"; };
 		4F255532191E8BED00B7B775 /* ico_diff_loc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_diff_loc@2x.png"; sourceTree = "<group>"; };
+		4F255537191E966E00B7B775 /* CFICurrentBooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFICurrentBooth.h; sourceTree = "<group>"; };
+		4F255538191E966E00B7B775 /* CFICurrentBooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFICurrentBooth.m; sourceTree = "<group>"; };
+		4F25553A191E975400B7B775 /* CFIBooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIBooth.h; sourceTree = "<group>"; };
+		4F25553B191E975400B7B775 /* CFIBooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIBooth.m; sourceTree = "<group>"; };
+		4F25553D191E979A00B7B775 /* CFIGetRegionCheckPosts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIGetRegionCheckPosts.h; sourceTree = "<group>"; };
+		4F25553E191E979A00B7B775 /* CFIGetRegionCheckPosts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIGetRegionCheckPosts.m; sourceTree = "<group>"; };
+		4F255540191E9A2C00B7B775 /* CFIGetCheckPostDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIGetCheckPostDetails.h; sourceTree = "<group>"; };
+		4F255541191E9A2C00B7B775 /* CFIGetCheckPostDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIGetCheckPostDetails.m; sourceTree = "<group>"; };
+		4F255543191E9BB200B7B775 /* CFIRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIRegion.h; sourceTree = "<group>"; };
+		4F255544191E9BB200B7B775 /* CFIRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIRegion.m; sourceTree = "<group>"; };
+		4F255546191E9DB000B7B775 /* CFIShareRegionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFIShareRegionInfo.h; sourceTree = "<group>"; };
+		4F255547191E9DB000B7B775 /* CFIShareRegionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFIShareRegionInfo.m; sourceTree = "<group>"; };
 		4F441901191DDE16005EE6F5 /* FCSK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCSK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F441904191DDE16005EE6F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F441906191DDE16005EE6F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -218,10 +236,14 @@
 				4F117614191DF0BB00C0000D /* CFIApi.m */,
 				4F255524191E58F600B7B775 /* CFIGetRoute.h */,
 				4F255525191E58F600B7B775 /* CFIGetRoute.m */,
+				4F117617191DF0BB00C0000D /* CFILogin.h */,
+				4F117618191DF0BB00C0000D /* CFILogin.m */,
+				4F25553D191E979A00B7B775 /* CFIGetRegionCheckPosts.h */,
+				4F25553E191E979A00B7B775 /* CFIGetRegionCheckPosts.m */,
+				4F255540191E9A2C00B7B775 /* CFIGetCheckPostDetails.h */,
+				4F255541191E9A2C00B7B775 /* CFIGetCheckPostDetails.m */,
 				4F117615191DF0BB00C0000D /* MPMuseumDataApi.h */,
 				4F117616191DF0BB00C0000D /* MPMuseumDataApi.m */,
-				4F117617191DF0BB00C0000D /* CFILoginDetails.h */,
-				4F117618191DF0BB00C0000D /* CFILoginDetails.m */,
 			);
 			path = API;
 			sourceTree = SOURCE_ROOT;
@@ -392,8 +414,16 @@
 				4F441939191DEB7E005EE6F5 /* CFIBaseitem.m */,
 				4F44193A191DEB7E005EE6F5 /* CFIUserDetails.h */,
 				4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */,
+				4F255546191E9DB000B7B775 /* CFIShareRegionInfo.h */,
+				4F255547191E9DB000B7B775 /* CFIShareRegionInfo.m */,
+				4F255543191E9BB200B7B775 /* CFIRegion.h */,
+				4F255544191E9BB200B7B775 /* CFIRegion.m */,
 				4F11761C191DF1A100C0000D /* CFILocation.h */,
 				4F11761D191DF1A100C0000D /* CFILocation.m */,
+				4F255537191E966E00B7B775 /* CFICurrentBooth.h */,
+				4F255538191E966E00B7B775 /* CFICurrentBooth.m */,
+				4F25553A191E975400B7B775 /* CFIBooth.h */,
+				4F25553B191E975400B7B775 /* CFIBooth.m */,
 				4F11761F191DF24B00C0000D /* CFIIncidentLoacation.h */,
 				4F117620191DF24B00C0000D /* CFIIncidentLoacation.m */,
 			);
@@ -523,8 +553,10 @@
 				4F441911191DDE17005EE6F5 /* main.m in Sources */,
 				4F11761A191DF0BB00C0000D /* MPMuseumDataApi.m in Sources */,
 				C3E7EA56191E31CD002EFA46 /* SCViewController.m in Sources */,
+				4F25553C191E975400B7B775 /* CFIBooth.m in Sources */,
 				C3E7EA45191E2853002EFA46 /* CFISignInViewController.m in Sources */,
 				4F255526191E58F600B7B775 /* CFIGetRoute.m in Sources */,
+				4F255548191E9DB000B7B775 /* CFIShareRegionInfo.m in Sources */,
 				4F255503191E36AB00B7B775 /* CFIMapViewController.m in Sources */,
 				4F117621191DF24B00C0000D /* CFIIncidentLoacation.m in Sources */,
 				4F117619191DF0BB00C0000D /* CFIApi.m in Sources */,
@@ -532,10 +564,14 @@
 				4F44193C191DEB7E005EE6F5 /* CFIBaseitem.m in Sources */,
 				C3E7EA5B191E3240002EFA46 /* KSXMLParser.m in Sources */,
 				4F117627191E270E00C0000D /* CFIRootViewController.m in Sources */,
-				4F11761B191DF0BB00C0000D /* CFILoginDetails.m in Sources */,
+				4F25553F191E979A00B7B775 /* CFIGetRegionCheckPosts.m in Sources */,
+				4F255539191E966E00B7B775 /* CFICurrentBooth.m in Sources */,
+				4F11761B191DF0BB00C0000D /* CFILogin.m in Sources */,
 				4F25552A191E709B00B7B775 /* CFIStatsViewController.m in Sources */,
 				C3B3F41A191E4469006D5BB4 /* UIAlertView+Blocks.m in Sources */,
 				C3B3F41E191E5D76006D5BB4 /* CFIRegisterUserViewController.m in Sources */,
+				4F255545191E9BB200B7B775 /* CFIRegion.m in Sources */,
+				4F255542191E9A2C00B7B775 /* CFIGetCheckPostDetails.m in Sources */,
 				C3E7EA5E191E3272002EFA46 /* SCShapeView.m in Sources */,
 				4F441915191DDE17005EE6F5 /* CFIAppDelegate.m in Sources */,
 			);

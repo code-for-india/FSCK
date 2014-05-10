@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CFIRegion.h"
 
 @interface CFILocation : NSObject
 
-@property(nonatomic, copy)NSNumber *latitude;
-@property(nonatomic, copy)NSNumber *longitude;
-@property(nonatomic, copy)NSNumber *travellerDensity;
-@property(nonatomic, copy)NSString *ID;
-
+@property (nonatomic, copy)NSNumber *latitude;
+@property (nonatomic, copy)NSNumber *longitude;
+@property (nonatomic, strong)NSNumber *travellerDensity;
+@property (nonatomic, copy)NSString *ID;
+@property (strong, nonatomic) NSString *name;
 
 @end

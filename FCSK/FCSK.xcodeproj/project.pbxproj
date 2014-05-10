@@ -406,8 +406,8 @@
 				C3B3F41D191E5D76006D5BB4 /* CFIRegisterUserViewController.xib */,
 				4F255527191E709B00B7B775 /* CFIStatsViewController.h */,
 				4F255528191E709B00B7B775 /* CFIStatsViewController.m */,
-				C3B3F427191E9D28006D5BB4 /* Custom Cells */,
 				4F255529191E709B00B7B775 /* CFIStatsViewController.xib */,
+				C3B3F427191E9D28006D5BB4 /* Custom Cells */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

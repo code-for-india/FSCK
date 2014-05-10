@@ -8,6 +8,9 @@
 
 #import "CFIStatsViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import "CFIShareRegionInfo.h"
+#import "CFIStatsTableViewCell.h"
+
 
 @interface CFIStatsViewController ()
 @property (weak, nonatomic) IBOutlet UIView *boothInfoView;
@@ -17,7 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIView *mapContainerView;
 @property (strong, nonatomic) GMSMapView *mapView;
 @property (weak, nonatomic) IBOutlet UITableView *mapTableView;
-
+@property (strong, nonatomic) NSArray *neighbourBoothsArray;
 @end
 
 @implementation CFIStatsViewController
@@ -38,6 +41,13 @@
     
     [self updateBoothInfoView];
     [self addMapView];
+   
+    
+    NSMutableArray *array = [NSMutableArray arrayWithArray: [CFIShareRegionInfo sharedInstance].currentRegion.booths];
+    [array removeObject:self.booth];
+    
+    self.neighbourBoothsArray = array;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -100,19 +110,27 @@
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return self.neighbourBoothsArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    CFIBooth *booth = self.neighbourBoothsArray[indexPath.row];
+    
+    CFIStatsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"statsCell"];
+    
+    if (!cell)
+    {
+        cell = [[CFIStatsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"statsCell"];
+    }
+    
+    cell.nameLabel.text = booth.name;
+    
+    cell.coordinateLabel.text = [NSString stringWithFormat:@"lat: %@ , long: %@",booth.latitude , booth.longitude];
+    cell.statsLabel.text = [NSString stringWithFormat:@"%@",booth.travellerDensity];
+    return cell;
+    
 }
-
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    return nil;
-}
-
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

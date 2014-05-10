@@ -10,4 +10,5 @@
 
 @interface CFIBooth : CFILocation
 
+
 @end

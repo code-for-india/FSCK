@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CFIBooth.h"
 
-@interface CFIStatsViewController : UIViewController
+@interface CFIStatsViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (strong, nonatomic) CFIBooth *booth;
 
 @end

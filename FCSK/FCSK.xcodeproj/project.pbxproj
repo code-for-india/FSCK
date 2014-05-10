@@ -29,6 +29,15 @@
 		4F255503191E36AB00B7B775 /* CFIMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F255502191E36AB00B7B775 /* CFIMapViewController.m */; };
 		4F255505191E372000B7B775 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4F255504191E372000B7B775 /* GoogleMaps.bundle */; };
 		4F255507191E381300B7B775 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F255506191E381300B7B775 /* GoogleMaps.framework */; };
+		4F255516191E4EA300B7B775 /* ico_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F25550D191E4EA300B7B775 /* ico_map.png */; };
+		4F255517191E4EA300B7B775 /* ico_map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F25550E191E4EA300B7B775 /* ico_map@2x.png */; };
+		4F255518191E4EA300B7B775 /* ico_qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F25550F191E4EA300B7B775 /* ico_qrcode.png */; };
+		4F255519191E4EA300B7B775 /* ico_qrcode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255510191E4EA300B7B775 /* ico_qrcode@2x.png */; };
+		4F25551A191E4EA300B7B775 /* ico_register.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255511191E4EA300B7B775 /* ico_register.png */; };
+		4F25551B191E4EA300B7B775 /* ico_register@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255512191E4EA300B7B775 /* ico_register@2x.png */; };
+		4F25551C191E4EA300B7B775 /* ico_statics.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255513191E4EA300B7B775 /* ico_statics.png */; };
+		4F25551D191E4EA300B7B775 /* ico_statics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F255514191E4EA300B7B775 /* ico_statics@2x.png */; };
+		4F255520191E501A00B7B775 /* storm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F25551F191E501A00B7B775 /* storm.jpg */; };
 		4F441905191DDE16005EE6F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441904191DDE16005EE6F5 /* Foundation.framework */; };
 		4F441907191DDE16005EE6F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441906191DDE16005EE6F5 /* CoreGraphics.framework */; };
 		4F441909191DDE16005EE6F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F441908191DDE16005EE6F5 /* UIKit.framework */; };
@@ -97,6 +106,15 @@
 		4F255502191E36AB00B7B775 /* CFIMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFIMapViewController.m; path = Controllers/CFIMapViewController.m; sourceTree = "<group>"; };
 		4F255504191E372000B7B775 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		4F255506191E381300B7B775 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		4F25550D191E4EA300B7B775 /* ico_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_map.png; sourceTree = "<group>"; };
+		4F25550E191E4EA300B7B775 /* ico_map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_map@2x.png"; sourceTree = "<group>"; };
+		4F25550F191E4EA300B7B775 /* ico_qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_qrcode.png; sourceTree = "<group>"; };
+		4F255510191E4EA300B7B775 /* ico_qrcode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_qrcode@2x.png"; sourceTree = "<group>"; };
+		4F255511191E4EA300B7B775 /* ico_register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_register.png; sourceTree = "<group>"; };
+		4F255512191E4EA300B7B775 /* ico_register@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_register@2x.png"; sourceTree = "<group>"; };
+		4F255513191E4EA300B7B775 /* ico_statics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_statics.png; sourceTree = "<group>"; };
+		4F255514191E4EA300B7B775 /* ico_statics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_statics@2x.png"; sourceTree = "<group>"; };
+		4F25551F191E501A00B7B775 /* storm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = storm.jpg; sourceTree = "<group>"; };
 		4F441901191DDE16005EE6F5 /* FCSK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCSK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F441904191DDE16005EE6F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F441906191DDE16005EE6F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -188,6 +206,30 @@
 			path = API;
 			sourceTree = SOURCE_ROOT;
 		};
+		4F25550B191E4EA300B7B775 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4F25551F191E501A00B7B775 /* storm.jpg */,
+				4F25550C191E4EA300B7B775 /* ActionIcons */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4F25550C191E4EA300B7B775 /* ActionIcons */ = {
+			isa = PBXGroup;
+			children = (
+				4F25550D191E4EA300B7B775 /* ico_map.png */,
+				4F25550E191E4EA300B7B775 /* ico_map@2x.png */,
+				4F25550F191E4EA300B7B775 /* ico_qrcode.png */,
+				4F255510191E4EA300B7B775 /* ico_qrcode@2x.png */,
+				4F255511191E4EA300B7B775 /* ico_register.png */,
+				4F255512191E4EA300B7B775 /* ico_register@2x.png */,
+				4F255513191E4EA300B7B775 /* ico_statics.png */,
+				4F255514191E4EA300B7B775 /* ico_statics@2x.png */,
+			);
+			path = ActionIcons;
+			sourceTree = "<group>";
+		};
 		4F4418F8191DDE16005EE6F5 = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +277,7 @@
 		4F44190A191DDE16005EE6F5 /* FCSK */ = {
 			isa = PBXGroup;
 			children = (
+				4F25550B191E4EA300B7B775 /* Images */,
 				C3B3F418191E4469006D5BB4 /* UIAlertView+Blocks.h */,
 				C3B3F419191E4469006D5BB4 /* UIAlertView+Blocks.m */,
 				C3E7EA59191E3240002EFA46 /* KSXMLParser.h */,
@@ -301,6 +344,9 @@
 				C3B3F41B191E5D76006D5BB4 /* CFIRegisterUserViewController.h */,
 				C3B3F41C191E5D76006D5BB4 /* CFIRegisterUserViewController.m */,
 				C3B3F41D191E5D76006D5BB4 /* CFIRegisterUserViewController.xib */,
+				C3E7EA4D191E30D0002EFA46 /* CFIScanViewController.h */,
+				C3E7EA4E191E30D0002EFA46 /* CFIScanViewController.m */,
+				C3E7EA4F191E30D0002EFA46 /* CFIScanViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -400,13 +446,24 @@
 				C3B3F421191E5DAC006D5BB4 /* CFIScanViewController.xib in Resources */,
 				C3E7EA4B191E2B8D002EFA46 /* input_field_email_address.png in Resources */,
 				C3B3F41F191E5D76006D5BB4 /* CFIRegisterUserViewController.xib in Resources */,
+				4F255516191E4EA300B7B775 /* ico_map.png in Resources */,
 				4F117628191E270E00C0000D /* CFIRootViewController.xib in Resources */,
+				4F25551C191E4EA300B7B775 /* ico_statics.png in Resources */,
 				C3E7EA58191E31CD002EFA46 /* beep.mp3 in Resources */,
+				4F25551A191E4EA300B7B775 /* ico_register.png in Resources */,
+				4F255520191E501A00B7B775 /* storm.jpg in Resources */,
+				C3E7EA57191E31CD002EFA46 /* SCViewController.xib in Resources */,
 				C3E7EA4C191E2B8D002EFA46 /* input_field_email_address@2x.png in Resources */,
+				4F255519191E4EA300B7B775 /* ico_qrcode@2x.png in Resources */,
+				C3E7EA51191E30D0002EFA46 /* CFIScanViewController.xib in Resources */,
+				4F255517191E4EA300B7B775 /* ico_map@2x.png in Resources */,
 				C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */,
 				4F44190F191DDE17005EE6F5 /* InfoPlist.strings in Resources */,
+				4F255518191E4EA300B7B775 /* ico_qrcode.png in Resources */,
 				4F441917191DDE17005EE6F5 /* Images.xcassets in Resources */,
 				4F255505191E372000B7B775 /* GoogleMaps.bundle in Resources */,
+				4F25551D191E4EA300B7B775 /* ico_statics@2x.png in Resources */,
+				4F25551B191E4EA300B7B775 /* ico_register@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

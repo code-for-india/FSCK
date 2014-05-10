@@ -8,7 +8,7 @@
 
 #import "CFIRootViewController.h"
 #import "CFIMapViewController.h"
-
+#import "CFISignInViewController.h"
 #import "SCViewController.h"
 
 @interface CFIRootViewController ()
@@ -34,12 +34,42 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self addBackgroundImage];
+    
+    // show login view controller
+    CFISignInViewController *sign = [[CFISignInViewController alloc]initWithNibName:@"CFISignInViewController" bundle:nil];
+    [self.navigationController presentViewController:sign animated:NO completion:^{
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Add Image View
+- (void)addBackgroundImage
+{
+    UIView *view = [[UIView alloc]initWithFrame:self.view.bounds];
+    view.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:view];
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
+    [imageView setImage:[UIImage imageNamed:@"storm.jpg"]];
+    [view addSubview:imageView];
+    
+    UIToolbar *toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame)/2, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
+    [self.view addSubview:toolbar];
+    
+    [self.view sendSubviewToBack:view];
+    
+    [self.view bringSubviewToFront:self.statBtn];
+    [self.view bringSubviewToFront:self.scanBtn];
+    [self.view bringSubviewToFront:self.registerUserBtn];
+    [self.view bringSubviewToFront:self.mapBtn];
 }
 
 #pragma mark - Button Actions

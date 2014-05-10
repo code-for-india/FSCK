@@ -48,6 +48,9 @@
     
     self.navigationController.navigationBar.hidden = NO;
     self.title = @"SCAN QR CODE";
+    
+    [self startCapturing];
+    
     // Create a new AVCaptureSession
     
 }

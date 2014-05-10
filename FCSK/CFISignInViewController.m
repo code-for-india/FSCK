@@ -11,6 +11,7 @@
 @interface CFISignInViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
+- (IBAction)signIN:(id)sender;
 
 @end
 
@@ -29,9 +30,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.usernameField.delegate = self;
+    self.passwordField.delegate = self;
+    
     // Do any additional setup after loading the view from its nib.
 }
 
+-(void) textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+-(void) loginWithUsername:(NSString *)username withPassword:(NSString *)password
+{
+    // Send API from here
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -39,4 +57,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)signIN:(id)sender {
+    [self loginWithUsername:self.usernameField.text withPassword:self.passwordField.text];
+}
 @end

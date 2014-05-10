@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CFISignInViewController : UIViewController
+@interface CFISignInViewController : UIViewController<UITextFieldDelegate>
 
 @end

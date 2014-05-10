@@ -169,6 +169,7 @@
                 tableView.frame =  self.view.frame;
                 tableView.delegate = self;
                 tableView.dataSource = self;
+            
                 [self.view addSubview:tableView];
                 
             }];
@@ -230,6 +231,19 @@
     return 1;
 }
 
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 66;
+}
+
+
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return @"Select Destination Booth";
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [[[NSUserDefaults standardUserDefaults] objectForKey:@"neighbourBooths"] count];
@@ -252,7 +266,16 @@
     return cell;
 }
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // send API To server indicating the next booth
+    
+    
+    // on completion.
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+    
+}
 
 
 

@@ -6,9 +6,11 @@
 //  Copyright (c) 2014 YML. All rights reserved.
 //
 
-#import "MPMuseumItemDetails.h"
+#import "CFILoginDetails.h"
 
-@implementation MPMuseumItemDetails
+#import "<#header#>"
+
+@implementation CFILoginDetails
 
 - (void)getMuseumDataWithUDID:(NSString *)UDID ID:(NSString *)ID majorId:(NSString *)majorID minorID:(NSString *)minorID callback:(responseCallBack)callback
 {
@@ -42,6 +44,46 @@
     [dataTask resume];
     
 }
+-(void) loginWithUserName:(NSString *)username passWord:(NSString *)password callBack:(responseCallBack) callBack
+{
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+    
+    // this is a POST request
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@",baseURL,@"/getArticleDetails.php"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
+    [request setHTTPMethod:@"POST"];
+    
+    NSDictionary *dict = @{@"username":username,@"password":password};
+
+    [request setHTTPBody:[NSJSONSerialization dataWithJSONObject:dict options:NSUTF8StringEncoding error:nil] ];
+    
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if([(NSHTTPURLResponse *)response statusCode] == 200)
+        {
+            // success
+            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+            
+            
+            if (callBack)
+            {
+                callBack(@"",nil,YES);
+            }
+            
+        }
+        else
+        {
+            // error
+            // success
+            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+            callBack(dictionary, error, NO);
+        }
+    }];
+    
+    [dataTask resume];
+
+}
+
 
 #pragma mark - Parse Item
 /*- (void)parseItemDetails:(NSDictionary *)data item:(MPMuseumItem *)item

@@ -8,6 +8,8 @@
 
 #import "CFIMapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import "CFIGetRoute.h"
+#import "CFILocation.h"
 
 @interface CFIMapViewController ()
 
@@ -49,6 +51,29 @@
     [self addCircleAtLatitude:12.96 Longitude:77.56 circleColor:[UIColor redColor] fillColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:0.4] circleWidth:2 radius:50000 animate:YES];
     
     //self.animateTimer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(animateCircles) userInfo:nil repeats:YES];
+    
+    /*CFILocation *location = [[CFILocation alloc]init];
+    location.latitude = @12.96;
+    location.longitude = @77.56;
+    
+    CFILocation *location1 = [[CFILocation alloc]init];
+    location1.latitude = @15.36;
+    location1.longitude = @75.08;
+    
+    CFIGetRoute *route = [[CFIGetRoute alloc]init];
+    [route getRouteFrom:location to:location1 callback:^(NSArray *responseData, NSError *error, BOOL success) {
+        
+        GMSMutablePath *path = [GMSMutablePath path];
+        [responseData enumerateObjectsUsingBlock:^(CLLocation *obj, NSUInteger idx, BOOL *stop) {
+           [path addCoordinate:CLLocationCoordinate2DMake(obj.coordinate.latitude, obj.coordinate.longitude)];
+        }];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            GMSPolyline *rectangle = [GMSPolyline polylineWithPath:path];
+            rectangle.strokeWidth = 2.;
+            rectangle.map = self.mapView;
+        });
+    }];*/
 }
 
 - (void)didReceiveMemoryWarning

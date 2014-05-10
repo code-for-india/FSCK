@@ -18,7 +18,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    [GMSServices provideAPIKey:@"AIzaSyCfnrPLbu4-TzgCswZDKbmAcn2tQmYTWS0"];
+    [GMSServices provideAPIKey:@"AIzaSyAvkIWqXgxhzosj90FmROFDcn8YwWVkMO4"];
     
     self.rootController = [[UINavigationController alloc]initWithRootViewController:[[CFIRootViewController alloc]initWithNibName:@"CFIRootViewController" bundle:nil]];
     self.window.rootViewController = self.rootController;

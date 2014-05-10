@@ -30,6 +30,8 @@
 		4F44193D191DEB7E005EE6F5 /* CFIUserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44193B191DEB7E005EE6F5 /* CFIUserDetails.m */; };
 		C3E7EA45191E2853002EFA46 /* CFISignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */; };
 		C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */; };
+		C3E7EA4B191E2B8D002EFA46 /* input_field_email_address.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */; };
+		C3E7EA4C191E2B8D002EFA46 /* input_field_email_address@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E7EA4A191E2B8D002EFA46 /* input_field_email_address@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		C3E7EA42191E2853002EFA46 /* CFISignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFISignInViewController.h; path = ../CFISignInViewController.h; sourceTree = "<group>"; };
 		C3E7EA43191E2853002EFA46 /* CFISignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CFISignInViewController.m; path = ../CFISignInViewController.m; sourceTree = "<group>"; };
 		C3E7EA44191E2853002EFA46 /* CFISignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CFISignInViewController.xib; path = ../CFISignInViewController.xib; sourceTree = "<group>"; };
+		C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = input_field_email_address.png; sourceTree = "<group>"; };
+		C3E7EA4A191E2B8D002EFA46 /* input_field_email_address@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input_field_email_address@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,8 @@
 				4F441933191DDE2D005EE6F5 /* Controllers */,
 				4F441913191DDE17005EE6F5 /* CFIAppDelegate.h */,
 				4F441914191DDE17005EE6F5 /* CFIAppDelegate.m */,
+				C3E7EA49191E2B8D002EFA46 /* input_field_email_address.png */,
+				C3E7EA4A191E2B8D002EFA46 /* input_field_email_address@2x.png */,
 				4F441916191DDE17005EE6F5 /* Images.xcassets */,
 				4F44190B191DDE16005EE6F5 /* Supporting Files */,
 			);
@@ -297,7 +303,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E7EA4B191E2B8D002EFA46 /* input_field_email_address.png in Resources */,
 				4F117628191E270E00C0000D /* CFIRootViewController.xib in Resources */,
+				C3E7EA4C191E2B8D002EFA46 /* input_field_email_address@2x.png in Resources */,
 				C3E7EA46191E2853002EFA46 /* CFISignInViewController.xib in Resources */,
 				4F44190F191DDE17005EE6F5 /* InfoPlist.strings in Resources */,
 				4F441917191DDE17005EE6F5 /* Images.xcassets in Resources */,

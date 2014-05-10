@@ -7,6 +7,7 @@
 //
 
 #import "CFIRootViewController.h"
+#import "CFIMapViewController.h"
 
 #import "SCViewController.h"
 
@@ -55,6 +56,9 @@
 - (IBAction)registerUserButtonPressed:(id)sender {
 }
 - (IBAction)mapButtonPressed:(id)sender {
+    
+    CFIMapViewController *map = [[CFIMapViewController alloc]initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:map animated:YES];
 }
 
 @end

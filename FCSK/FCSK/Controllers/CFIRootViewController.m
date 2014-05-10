@@ -7,6 +7,7 @@
 //
 
 #import "CFIRootViewController.h"
+#import "CFIMapViewController.h"
 
 @interface CFIRootViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *statBtn;
@@ -48,6 +49,9 @@
 - (IBAction)registerUserButtonPressed:(id)sender {
 }
 - (IBAction)mapButtonPressed:(id)sender {
+    
+    CFIMapViewController *map = [[CFIMapViewController alloc]initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:map animated:YES];
 }
 
 @end

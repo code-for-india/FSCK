@@ -8,6 +8,7 @@
 
 #import "CFIAppDelegate.h"
 #import "CFIRootViewController.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 @implementation CFIAppDelegate
 
@@ -16,6 +17,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    [GMSServices provideAPIKey:@"AIzaSyCfnrPLbu4-TzgCswZDKbmAcn2tQmYTWS0"];
     
     self.rootController = [[UINavigationController alloc]initWithRootViewController:[[CFIRootViewController alloc]initWithNibName:@"CFIRootViewController" bundle:nil]];
     self.window.rootViewController = self.rootController;

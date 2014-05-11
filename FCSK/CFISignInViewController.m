@@ -7,6 +7,9 @@
 //
 
 #import "CFISignInViewController.h"
+#import "CFIGetRegionCheckPosts.h"
+#import "CFIShareRegionInfo.h"
+#import "CFIRegion.h"
 
 @interface CFISignInViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
@@ -53,7 +56,17 @@
     [self.usernameField resignFirstResponder];
     [self.passwordField resignFirstResponder];
     
-    [self dismissViewControllerAnimated:YES completion:^{
+    CFIGetRegionCheckPosts *checkposts = [[CFIGetRegionCheckPosts alloc]init];
+    [checkposts getAllCheckPostForTheRegion:^(id responseData, NSError *error, BOOL success) {
+        
+        CFIRegion *region = [[CFIRegion alloc]init];
+        region.booths = responseData;
+        [[CFIShareRegionInfo sharedInstance]setCurrentRegion:region];
+        [[CFIShareRegionInfo sharedInstance]setCurrentBuuth:(CFICurrentBooth *)responseData[0]];
+        
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+        }];
         
     }];
 }

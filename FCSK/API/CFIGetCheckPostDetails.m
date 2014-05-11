@@ -8,6 +8,7 @@
 
 #import "CFIGetCheckPostDetails.h"
 #import "CFIBooth.h"
+#import "CFICurrentBooth.h"
 
 @implementation CFIGetCheckPostDetails
 
@@ -17,7 +18,7 @@
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
     
     // this is a POST request
-    NSString *urlString = [NSString stringWithFormat:@"%@/%@",baseURL,@"getAllItems.php"];
+    NSString *urlString = [NSString stringWithFormat:@"%@checkpost?id=%@",baseURL,ID];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
     [request setHTTPMethod:@"GET"];
     
@@ -44,7 +45,13 @@
 
 - (CFIBooth *)parseData:(NSDictionary *)dict ID:(NSString *)ID
 {
-    return nil;
+    CFIBooth *booth = [[CFIBooth alloc]init];
+    booth.latitude = dict[@"Latitude"];
+    booth.longitude = dict[@"Longitude"];
+    booth.ID = dict[@"PostId"];
+    booth.name = dict[@"Name"];
+
+    return booth;
 }
 
 @end

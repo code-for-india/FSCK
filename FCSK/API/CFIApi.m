@@ -8,7 +8,7 @@
 
 #import "CFIApi.h"
 
-NSString *const baseURL = @"http://192.168.1.72/museumpilot/apis";
+NSString *const baseURL = @"http://localhost:8080/";
 
 @implementation CFIApi
 

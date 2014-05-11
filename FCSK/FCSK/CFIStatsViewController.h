@@ -13,4 +13,6 @@
 
 @property (strong, nonatomic) CFIBooth *booth;
 
+- (void)loadBoothDetaisl:(NSString *)ID;
+
 @end

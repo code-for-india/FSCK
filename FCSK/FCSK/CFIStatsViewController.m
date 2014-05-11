@@ -10,6 +10,7 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import "CFIShareRegionInfo.h"
 #import "CFIStatsTableViewCell.h"
+#import "CFIGetCheckPostDetails.h"
 #import "RMPieChart.h"
 
 
@@ -33,6 +34,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *mLabel;
 @property (weak, nonatomic) IBOutlet UIView *cview;
 @property (weak, nonatomic) IBOutlet UILabel *cLabel;
+
+@property (strong, nonatomic)CFIBooth *statBooth;
 
 @end
 
@@ -64,6 +67,14 @@
     self.neighbourBoothsArray = array;
     
     self.title = @"Statistics";
+}
+
+- (void)loadBoothDetaisl:(NSString *)ID
+{
+    CFIGetCheckPostDetails *checkpost = [[CFIGetCheckPostDetails alloc]init];
+    [checkpost getCheckPostDetailsWithId:ID callback:^(id responseData, NSError *error, BOOL success) {
+        self.statBooth = responseData;
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated

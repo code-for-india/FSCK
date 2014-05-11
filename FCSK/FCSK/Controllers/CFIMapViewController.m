@@ -9,7 +9,9 @@
 #import "CFIMapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "CFIGetRoute.h"
+#import "CFIShareRegionInfo.h"
 #import "CFILocation.h"
+#import "CFIBooth.h"
 
 @interface CFIMapViewController ()
 
@@ -38,23 +40,24 @@
     
     // Create a GMSCameraPosition that tells the map to display the
     // coordinate -33.86,151.20 at zoom level 6.
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:12.96
-                                                            longitude:77.56
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:75.50499725341797
+                                                            longitude:34.21469879150391
                                                                  zoom:6];
     self.mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     self.mapView.myLocationEnabled = YES;
     self.mapView.settings.myLocationButton = YES;
     self.view = self.mapView;
     
-    
-    [self addMarkerAtLatitude:12.96 Longitude:77.56 title:@"Bangalore" snippet:@"Karnataka"];
-    [self addCircleAtLatitude:12.96 Longitude:77.56 circleColor:[UIColor redColor] fillColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:0.4] circleWidth:2 radius:50000 animate:YES];
-    
+   [[[[CFIShareRegionInfo sharedInstance]currentRegion]booths] enumerateObjectsUsingBlock:^(CFIBooth *booth, NSUInteger idx, BOOL *stop) {
+       [self addMarkerAtLatitude:[booth.latitude floatValue] Longitude:[booth.longitude floatValue] title:booth.name snippet:booth.name];
+       //[self addCircleAtLatitude:[booth.latitude floatValue] Longitude:[booth.longitude floatValue] circleColor:[UIColor redColor] fillColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:0.4] circleWidth:2 radius:50000 animate:YES];
+ 
+   }];
     self.title = @"Map";
     
     //self.animateTimer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(animateCircles) userInfo:nil repeats:YES];
     
-    CFILocation *location = [[CFILocation alloc]init];
+    /*CFILocation *location = [[CFILocation alloc]init];
     location.latitude = @12.96;
     location.longitude = @77.56;
     
@@ -71,7 +74,7 @@
             rectangle.strokeWidth = 2.;
             rectangle.map = self.mapView;
         });
-    }];
+    }];*/
 }
 
 - (void)viewWillAppear:(BOOL)animated

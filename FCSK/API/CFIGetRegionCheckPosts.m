@@ -1,4 +1,4 @@
-//
+    //
 //  CFIGetRegionCheckPosts.m
 //  FCSK
 //
@@ -17,7 +17,7 @@
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
     
     // this is a POST request
-    NSString *urlString = [NSString stringWithFormat:@"%@/%@",baseURL,@"getAllItems.php"];
+    NSString *urlString = [NSString stringWithFormat:@"%@checkpost/all?start=0&count=10&region=1",baseURL];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
     [request setHTTPMethod:@"GET"];
     
@@ -25,8 +25,8 @@
         if([(NSHTTPURLResponse *)response statusCode] == 200)
         {
             // success
-            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-            callback([self parseRegionCheckposts:dictionary], nil, YES);
+            NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+            callback([self parseRegionCheckposts:array], nil, YES);
         }
         else
         {
@@ -41,16 +41,17 @@
     
 }
 
-- (NSArray *)parseRegionCheckposts:(NSDictionary *)data
+- (NSArray *)parseRegionCheckposts:(NSArray *)data
 {
-    NSArray *array  = data[@"data"];
+    NSArray *array  = data;
     __block NSMutableArray *boothArray = [NSMutableArray arrayWithCapacity:data.count];
     
     [array enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
         CFIBooth *booth = [[CFIBooth alloc]init];
-        booth.latitude = obj[@"latitude"];
-        booth.longitude = obj[@"longitude"];
-        booth.ID = obj[@"ID"];
+        booth.latitude = obj[@"Latitude"];
+        booth.longitude = obj[@"Longitude"];
+        booth.ID = obj[@"PostId"];
+        booth.name = obj[@"Name"];
         
         [boothArray addObject:booth];
     }];

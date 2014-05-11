@@ -12,6 +12,7 @@
 #import "CFIStatsViewController.h"
 #import "SCViewController.h"
 #import "CFIRegisterUserViewController.h"
+#import "CFIShareRegionInfo.h"
 
 @interface CFIRootViewController ()
 
@@ -98,6 +99,8 @@
 - (IBAction)statsButtonPressed:(id)sender {
     CFIStatsViewController *statsController = [[CFIStatsViewController alloc]initWithNibName:@"CFIStatsViewController" bundle:nil];
     [self.navigationController pushViewController:statsController animated:YES];
+    
+    [statsController loadBoothDetaisl:[CFIShareRegionInfo sharedInstance].currentBuuth.ID];
 }
 
 - (IBAction)scanButtonPressed:(id)sender
